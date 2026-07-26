@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şirnaz Restaurant - Yönetici Girişi</title>
+  <link rel="icon" type="image/webp" href="/images/logo.webp">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f6f6f9;
+      --color-red: #9B1C1C;
+      --color-red-hover: #b22222;
+      --text-primary: #111111;
+      --text-secondary: #444444;
+      --text-muted: #8e8e93;
+      --border-color: #e5e5e7;
+      --font-sans: 'Outfit', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .login-container {
+      background-color: var(--bg-primary);
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 45px rgba(0, 0, 0, 0.05);
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-logo {
+      height: 60px;
+      width: auto;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 2px 4px rgba(155, 28, 28, 0.05));
+    }
+
+    .login-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--color-red);
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .form-group {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      letter-spacing: 0.5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-group input:focus {
+      border-color: var(--color-red);
+      background-color: #ffffff;
+    }
+
+    .btn-login {
+      width: 100%;
+      background-color: var(--color-red);
+      color: #ffffff;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-login:hover {
+      background-color: var(--color-red-hover);
+    }
+
+    .error-msg {
+      width: 100%;
+      background-color: #fff5f5;
+      color: #c53030;
+      border: 1px solid #feb2b2;
+      padding: 10px;
+      font-size: 0.85rem;
+      text-align: center;
+      margin-bottom: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="/images/logo.webp" alt="Logo" class="login-logo">
+    <h1 class="login-title">Yönetici Girişi</h1>
+    
+    <div class="error-msg" id="error-box">Geçersiz kullanıcı adı veya şifre.</div>
+    
+    <form id="login-form" style="width: 100%;">
+      <div class="form-group">
+        <label for="username">Kullanıcı Adı</label>
+        <input type="text" id="username" autocomplete="username" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Şifre</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+      </div>
+      
+      <button type="submit" class="btn-login">Giriş Yap</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const usernameInput = document.getElementById('username').value.trim();
+      const passwordInput = document.getElementById('password').value;
+      const errorBox = document.getElementById('error-box');
+
+      try {
+        const response = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            username: usernameInput,
+            password: passwordInput
+          })
+        });
+
+        const data = await response.json();
+        
+        if (data.success) {
+          // Success, redirect to dashboard
+          window.location.href = '/admin/';
+        } else {
+          errorBox.textContent = data.error || 'Giriş başarısız.';
+          errorBox.style.display = 'block';
+        }
+      } catch (err) {
+        errorBox.textContent = 'Bağlantı hatası oluştu.';
+        errorBox.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

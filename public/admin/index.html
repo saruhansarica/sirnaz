@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şirnaz Restaurant - Yönetim Paneli</title>
+  <link rel="icon" type="image/webp" href="/images/logo.webp">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+  <div class="admin-wrapper">
+    <!-- Sidebar for Categories -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-header">
+        <img src="/images/logo.webp" alt="Logo" class="sidebar-logo">
+        <h1 class="sidebar-title">Menü Yönetimi</h1>
+      </div>
+      
+      <div class="category-list-container" id="category-list">
+        <!-- Categories will load dynamically -->
+      </div>
+      
+      <div class="sidebar-footer">
+        <button class="btn-admin" id="btn-add-category" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Kategori Ekle
+        </button>
+        <button class="btn-admin-secondary" id="btn-logout" style="width: 100%; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Güvenli Çıkış
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area for Products -->
+    <main class="admin-main">
+      <div class="main-header">
+        <div>
+          <h2 class="main-title" id="current-category-title">Yükleniyor...</h2>
+          <p id="current-category-desc" style="color: var(--text-muted); font-size: 0.85rem; margin-top: 4px;"></p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button class="btn-admin-secondary" id="btn-edit-category">Kategoriyi Düzenle</button>
+          <button class="btn-admin" id="btn-add-product">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            Ürün Ekle
+          </button>
+        </div>
+      </div>
+
+      <div class="products-list-wrapper">
+        <div class="products-grid" id="products-list">
+          <!-- Products will load dynamically -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Floating Save Actions -->
+  <div class="global-save-bar" id="save-bar" style="display: none;">
+    <button class="btn-admin-secondary" id="btn-discard-changes">Geri Al</button>
+    <button class="btn-admin" id="btn-save-changes">Değişiklikleri Kaydet</button>
+  </div>
+
+  <!-- Category Modal -->
+  <div class="admin-modal-overlay" id="category-modal">
+    <div class="admin-modal modal-small">
+      <div class="modal-header">
+        <h3 class="modal-title" id="category-modal-title">Kategori Ekle</h3>
+        <button class="btn-close-modal" onclick="closeModal('category-modal')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="category-form">
+          <input type="hidden" id="category-form-mode" value="add">
+          <div class="form-group">
+            <label>Kategori Adı (Türkçe)</label>
+            <input type="text" id="category-name-tr" required placeholder="Örn: Kebaplar">
+          </div>
+          <div class="form-group">
+            <label>Category Name (English)</label>
+            <input type="text" id="category-name-en" required placeholder="Örn: Kebabs">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-admin-danger" id="btn-delete-category" style="display: none; margin-right: auto;">Kategoriyi Sil</button>
+        <button class="btn-admin-secondary" onclick="closeModal('category-modal')">İptal</button>
+        <button class="btn-admin" id="btn-submit-category">Kaydet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Modal -->
+  <div class="admin-modal-overlay" id="product-modal">
+    <div class="admin-modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="product-modal-title">Ürün Ekle</h3>
+        <button class="btn-close-modal" onclick="closeModal('product-modal')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="product-form" class="form-grid-bilingual">
+          <input type="hidden" id="product-form-mode" value="add">
+          <input type="hidden" id="product-form-id" value="">
+          
+          <!-- Name -->
+          <div class="form-group">
+            <label>Ürün Adı (Türkçe)</label>
+            <input type="text" id="product-name-tr" required>
+          </div>
+          <div class="form-group">
+            <label>Product Name (English)</label>
+            <input type="text" id="product-name-en" required>
+          </div>
+
+          <!-- Description -->
+          <div class="form-group">
+            <label>Açıklama (Türkçe)</label>
+            <textarea id="product-desc-tr" rows="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Description (English)</label>
+            <textarea id="product-desc-en" rows="2" required></textarea>
+          </div>
+
+          <!-- Price & Image & Badge -->
+          <div class="form-group">
+            <label>Fiyat (₺)</label>
+            <input type="number" id="product-price" required min="0">
+          </div>
+          <div class="form-group">
+            <label>Görsel Seç / Cihazdan Yükle</label>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" id="product-image" readonly placeholder="Dosya seçin veya yükleyin..." style="flex-grow: 1;">
+              <button type="button" class="btn-admin-secondary" onclick="document.getElementById('file-upload-input').click()" style="padding: 0 16px; white-space: nowrap;">Görsel Yükle</button>
+            </div>
+            <input type="file" id="file-upload-input" accept="image/*" style="display: none;">
+            <span id="upload-status-lbl" style="font-size: 0.75rem; color: var(--text-muted); display: none; margin-top: 4px;">Yükleniyor...</span>
+          </div>
+
+          <div class="form-group">
+            <label>Rozet (Türkçe) - İsteğe Bağlı</label>
+            <input type="text" id="product-badge-tr" placeholder="Örn: Yeni, Şefin Seçimi">
+          </div>
+          <div class="form-group">
+            <label>Badge (English) - Optional</label>
+            <input type="text" id="product-badge-en" placeholder="Örn: New, Chef's Choice">
+          </div>
+
+          <div class="form-group-full" style="border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 10px;">
+            <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-red);">Gelişmiş Özellikler</h4>
+          </div>
+
+          <!-- Gramaj & Domuz Eti Checkbox -->
+          <div class="form-group">
+            <label>Gramaj / Porsiyon (Örn: 350g, 1 Şiş)</label>
+            <input type="text" id="product-weight" placeholder="Örn: 350g">
+          </div>
+          <div class="form-group form-group-checkbox">
+            <input type="checkbox" id="product-contains-pork">
+            <label for="product-contains-pork" style="margin-top: 2px;">Domuz türevleri içeriyor mu? (Contains Pork)</label>
+          </div>
+
+          <!-- Allergens -->
+          <div class="form-group">
+            <label>Alerjen Uyarıları (Türkçe)</label>
+            <input type="text" id="product-allergens-tr" placeholder="Örn: Gluten ve süt içerir.">
+          </div>
+          <div class="form-group">
+            <label>Allergen Warnings (English)</label>
+            <input type="text" id="product-allergens-en" placeholder="Örn: Contains gluten and dairy.">
+          </div>
+
+          <!-- Pairing -->
+          <div class="form-group">
+            <label>Eşleşen İçecek Önerisi (Türkçe)</label>
+            <input type="text" id="product-pairing-tr" placeholder="Örn: Yayık Ayran">
+          </div>
+          <div class="form-group">
+            <label>Beverage Pairing (English)</label>
+            <input type="text" id="product-pairing-en" placeholder="Örn: Traditional Ayran">
+          </div>
+
+          <!-- Ingredients -->
+          <div class="form-group">
+            <label>İçindekiler listesi (Türkçe)</label>
+            <input type="text" id="product-ingredients-tr" placeholder="Örn: Kuzu kıyma, kuyruk yağı, tuz">
+          </div>
+          <div class="form-group">
+            <label>Ingredients list (English)</label>
+            <input type="text" id="product-ingredients-en" placeholder="Örn: Minced lamb, tail fat, salt">
+          </div>
+
+          <!-- Nutrition Grid -->
+          <div class="form-group-full">
+            <label style="margin-bottom: 8px; display: block;">Besin Değerleri (Nutrition Values)</label>
+            <div class="nutrition-grid">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label style="font-size: 0.7rem;">Kalori (kcal)</label>
+                <input type="text" id="product-nutrition-calories" placeholder="Örn: 420 kcal">
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label style="font-size: 0.7rem;">Protein (g)</label>
+                <input type="text" id="product-nutrition-protein" placeholder="Örn: 32g">
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label style="font-size: 0.7rem;">Karbonhidrat (g)</label>
+                <input type="text" id="product-nutrition-carbs" placeholder="Örn: 12g">
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label style="font-size: 0.7rem;">Yağ (g)</label>
+                <input type="text" id="product-nutrition-fat" placeholder="Örn: 24g">
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-admin-danger" id="btn-delete-product" style="display: none; margin-right: auto;">Ürünü Sil</button>
+        <button class="btn-admin-secondary" onclick="closeModal('product-modal')">İptal</button>
+        <button class="btn-admin" id="btn-submit-product">Ürünü Kaydet</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // In-memory data states
+    let originalMenu = [];
+    let menu = [];
+    let activeCategoryId = '';
+
+    // Elements
+    const categoryList = document.getElementById('category-list');
+    const productsList = document.getElementById('products-list');
+    const currentCategoryTitle = document.getElementById('current-category-title');
+    const currentCategoryDesc = document.getElementById('current-category-desc');
+    const saveBar = document.getElementById('save-bar');
+    
+    // Modals
+    const categoryModal = document.getElementById('category-modal');
+    const categoryForm = document.getElementById('category-form');
+    const productModal = document.getElementById('product-modal');
+    const productForm = document.getElementById('product-form');
+
+    // ==========================================
+    // Fetch and Load Data
+    // ==========================================
+    const loadMenu = async () => {
+      try {
+        const res = await fetch('/api/menu');
+        if (!res.ok) throw new Error('Menü alınamadı.');
+        const data = await res.json();
+        
+        originalMenu = JSON.parse(JSON.stringify(data)); // Deep clone
+        menu = JSON.parse(JSON.stringify(data));
+        
+        if (menu.length > 0) {
+          activeCategoryId = menu[0].id;
+        }
+        
+        renderCategories();
+        renderActiveCategoryProducts();
+        checkChanges();
+      } catch (err) {
+        alert('Menü yüklenirken hata oluştu: ' + err.message);
+      }
+    };
+
+    const checkChanges = () => {
+      const hasChanged = JSON.stringify(originalMenu) !== JSON.stringify(menu);
+      saveBar.style.display = hasChanged ? 'flex' : 'none';
+    };
+
+    // ==========================================
+    // Render Categories in Sidebar
+    // ==========================================
+    const renderCategories = () => {
+      categoryList.innerHTML = '';
+      
+      menu.forEach((category, index) => {
+        const item = document.createElement('div');
+        item.className = `category-item ${category.id === activeCategoryId ? 'active' : ''}`;
+        item.addEventListener('click', (e) => {
+          // If clicked actions, ignore category selection
+          if (e.target.closest('.category-actions')) return;
+          activeCategoryId = category.id;
+          renderCategories();
+          renderActiveCategoryProducts();
+        });
+
+        item.innerHTML = `
+          <span class="category-name">${category.name.tr}</span>
+          <div class="category-actions">
+            <button class="action-btn-mini" onclick="moveCategory(${index}, -1)" title="Yukarı">
+              ▲
+            </button>
+            <button class="action-btn-mini" onclick="moveCategory(${index}, 1)" title="Aşağı">
+              ▼
+            </button>
+          </div>
+        `;
+        
+        categoryList.appendChild(item);
+      });
+    };
+
+    // ==========================================
+    // Reorder Categories / Products
+    // ==========================================
+    window.moveCategory = (index, direction) => {
+      const targetIndex = index + direction;
+      if (targetIndex < 0 || targetIndex >= menu.length) return;
+      
+      // Swap array elements
+      const temp = menu[index];
+      menu[index] = menu[targetIndex];
+      menu[targetIndex] = temp;
+      
+      renderCategories();
+      checkChanges();
+    };
+
+    window.moveProduct = (index, direction) => {
+      const category = menu.find(c => c.id === activeCategoryId);
+      if (!category) return;
+      
+      const targetIndex = index + direction;
+      if (targetIndex < 0 || targetIndex >= category.items.length) return;
+      
+      // Swap array elements
+      const temp = category.items[index];
+      category.items[index] = category.items[targetIndex];
+      category.items[targetIndex] = temp;
+      
+      renderActiveCategoryProducts();
+      checkChanges();
+    };
+
+    // ==========================================
+    // Render Active Category Products
+    // ==========================================
+    const renderActiveCategoryProducts = () => {
+      const category = menu.find(c => c.id === activeCategoryId);
+      if (!category) {
+        currentCategoryTitle.textContent = "Kategori Bulunamadı";
+        productsList.innerHTML = `<div class="empty-state">Kategori seçilmedi ya da silindi.</div>`;
+        return;
+      }
+      
+      currentCategoryTitle.textContent = category.name.tr;
+      currentCategoryDesc.textContent = `ID: ${category.id} | Toplam: ${category.items.length} Ürün`;
+      productsList.innerHTML = '';
+      
+      if (category.items.length === 0) {
+        productsList.innerHTML = `<div class="empty-state">Bu kategoride henüz ürün bulunmuyor. Eklemek için "Ürün Ekle"ye tıklayın.</div>`;
+        return;
+      }
+      
+      category.items.forEach((item, index) => {
+        const row = document.createElement('div');
+        row.className = 'product-row-card';
+        
+        const fallbackImg = category.id === 'corbalar' ? '/images/soup_traditional.webp' : 
+                            (category.id === 'baslangiclar' ? '/images/meze_hummus.webp' : 
+                            (category.id === 'salatalar' ? '/images/salad_traditional.webp' : 
+                            (category.id === 'sirnaz-spesiyalleri' ? '/images/steak_ribeye.webp' : '/images/kebab_adana.webp')));
+        const itemImage = item.image || fallbackImg;
+
+        row.innerHTML = `
+          <div class="product-info-col">
+            <img src="${itemImage}" alt="" class="product-thumb">
+            <div class="product-row-details">
+              <span class="product-row-title">${item.name.tr}</span>
+              <span class="product-row-category">${item.name.en}</span>
+            </div>
+          </div>
+          <div class="product-pricing-col">
+            <span class="product-row-price">${item.price} ₺</span>
+            <div class="product-row-actions">
+              <button class="action-btn-mini" onclick="moveProduct(${index}, -1)" title="Yukarı Taşı">▲</button>
+              <button class="action-btn-mini" onclick="moveProduct(${index}, 1)" title="Aşağı Taşı">▼</button>
+              <button class="btn-admin-secondary" onclick="openEditProductModal('${item.id}')" style="padding: 6px 12px; font-size: 0.8rem;">Düzenle</button>
+            </div>
+          </div>
+        `;
+        
+        productsList.appendChild(row);
+      });
+    };
+
+    // ==========================================
+    // Category Add & Edit handlers
+    // ==========================================
+    document.getElementById('btn-add-category').addEventListener('click', () => {
+      document.getElementById('category-form-mode').value = 'add';
+      document.getElementById('category-modal-title').textContent = 'Yeni Kategori Ekle';
+      document.getElementById('btn-delete-category').style.display = 'none';
+      categoryForm.reset();
+      openModal('category-modal');
+    });
+
+    document.getElementById('btn-edit-category').addEventListener('click', () => {
+      const category = menu.find(c => c.id === activeCategoryId);
+      if (!category) return;
+      
+      document.getElementById('category-form-mode').value = 'edit';
+      document.getElementById('category-modal-title').textContent = 'Kategoriyi Düzenle';
+      document.getElementById('btn-delete-category').style.display = 'inline-block';
+      
+      document.getElementById('category-name-tr').value = category.name.tr;
+      document.getElementById('category-name-en').value = category.name.en;
+      
+      openModal('category-modal');
+    });
+
+    document.getElementById('btn-submit-category').addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const nameTr = document.getElementById('category-name-tr').value.trim();
+      const nameEn = document.getElementById('category-name-en').value.trim();
+      const mode = document.getElementById('category-form-mode').value;
+      
+      if (!nameTr || !nameEn) {
+        alert('Lütfen tüm alanları doldurun.');
+        return;
+      }
+      
+      if (mode === 'add') {
+        // Generate clean ID from TR name
+        const generatedId = nameTr.toLowerCase()
+          .replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ş/g, 's')
+          .replace(/ı/g, 'i').replace(/ö/g, 'o').replace(/ç/g, 'c')
+          .replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+          
+        const newCategory = {
+          id: generatedId,
+          name: { tr: nameTr, en: nameEn },
+          items: []
+        };
+        
+        menu.push(newCategory);
+        activeCategoryId = generatedId;
+      } else {
+        const category = menu.find(c => c.id === activeCategoryId);
+        if (category) {
+          category.name.tr = nameTr;
+          category.name.en = nameEn;
+        }
+      }
+      
+      closeModal('category-modal');
+      renderCategories();
+      renderActiveCategoryProducts();
+      checkChanges();
+    });
+
+    document.getElementById('btn-delete-category').addEventListener('click', () => {
+      if (!confirm('Kategoriyi silmek istediğinizden emin misiniz? Bu kategori altındaki TÜM ürünler silinecektir!')) return;
+      
+      const index = menu.findIndex(c => c.id === activeCategoryId);
+      if (index > -1) {
+        menu.splice(index, 1);
+        activeCategoryId = menu.length > 0 ? menu[0].id : '';
+        closeModal('category-modal');
+        renderCategories();
+        renderActiveCategoryProducts();
+        checkChanges();
+      }
+    });
+
+    // ==========================================
+    // Product Add & Edit Handlers
+    // ==========================================
+    document.getElementById('btn-add-product').addEventListener('click', () => {
+      document.getElementById('product-form-mode').value = 'add';
+      document.getElementById('product-modal-title').textContent = 'Yeni Ürün Ekle';
+      document.getElementById('btn-delete-product').style.display = 'none';
+      productForm.reset();
+      openModal('product-modal');
+    });
+
+    window.openEditProductModal = (productId) => {
+      const category = menu.find(c => c.id === activeCategoryId);
+      if (!category) return;
+      
+      const item = category.items.find(i => i.id === productId);
+      if (!item) return;
+      
+      document.getElementById('product-form-mode').value = 'edit';
+      document.getElementById('product-form-id').value = item.id;
+      document.getElementById('product-modal-title').textContent = 'Ürünü Düzenle';
+      document.getElementById('btn-delete-product').style.display = 'inline-block';
+      
+      document.getElementById('product-name-tr').value = item.name.tr;
+      document.getElementById('product-name-en').value = item.name.en;
+      document.getElementById('product-desc-tr').value = item.description.tr;
+      document.getElementById('product-desc-en').value = item.description.en;
+      document.getElementById('product-price').value = item.price;
+      document.getElementById('product-image').value = item.image || '';
+      document.getElementById('product-badge-tr').value = item.badge?.tr || '';
+      document.getElementById('product-badge-en').value = item.badge?.en || '';
+      
+      // Advanced
+      document.getElementById('product-weight').value = item.details?.weight || '';
+      document.getElementById('product-contains-pork').checked = !!item.details?.containsPork;
+      document.getElementById('product-allergens-tr').value = item.details?.allergens?.tr || '';
+      document.getElementById('product-allergens-en').value = item.details?.allergens?.en || '';
+      document.getElementById('product-pairing-tr').value = item.details?.pairing?.tr || '';
+      document.getElementById('product-pairing-en').value = item.details?.pairing?.en || '';
+      document.getElementById('product-ingredients-tr').value = item.details?.ingredients?.tr || '';
+      document.getElementById('product-ingredients-en').value = item.details?.ingredients?.en || '';
+      
+      // Nutrition
+      document.getElementById('product-nutrition-calories').value = item.details?.nutrition?.calories || '';
+      document.getElementById('product-nutrition-protein').value = item.details?.nutrition?.protein || '';
+      document.getElementById('product-nutrition-carbs').value = item.details?.nutrition?.carbs || '';
+      document.getElementById('product-nutrition-fat').value = item.details?.nutrition?.fat || '';
+      
+      openModal('product-modal');
+    };
+
+    document.getElementById('btn-submit-product').addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const category = menu.find(c => c.id === activeCategoryId);
+      if (!category) return;
+      
+      const mode = document.getElementById('product-form-mode').value;
+      const productId = document.getElementById('product-form-id').value;
+      
+      const nameTr = document.getElementById('product-name-tr').value.trim();
+      const nameEn = document.getElementById('product-name-en').value.trim();
+      const price = parseFloat(document.getElementById('product-price').value);
+      
+      if (!nameTr || !nameEn || isNaN(price)) {
+        alert('Lütfen gerekli alanları (Adı, İngilizce Adı ve Fiyat) doldurun.');
+        return;
+      }
+      
+      const productData = {
+        name: { tr: nameTr, en: nameEn },
+        description: { 
+          tr: document.getElementById('product-desc-tr').value.trim(), 
+          en: document.getElementById('product-desc-en').value.trim() 
+        },
+        price: price,
+        image: document.getElementById('product-image').value.trim() || null,
+        badge: document.getElementById('product-badge-tr').value.trim() ? {
+          tr: document.getElementById('product-badge-tr').value.trim(),
+          en: document.getElementById('product-badge-en').value.trim() || document.getElementById('product-badge-tr').value.trim()
+        } : null,
+        details: {
+          weight: document.getElementById('product-weight').value.trim() || null,
+          containsPork: document.getElementById('product-contains-pork').checked,
+          allergens: document.getElementById('product-allergens-tr').value.trim() ? {
+            tr: document.getElementById('product-allergens-tr').value.trim(),
+            en: document.getElementById('product-allergens-en').value.trim() || document.getElementById('product-allergens-tr').value.trim()
+          } : null,
+          pairing: document.getElementById('product-pairing-tr').value.trim() ? {
+            tr: document.getElementById('product-pairing-tr').value.trim(),
+            en: document.getElementById('product-pairing-en').value.trim() || document.getElementById('product-pairing-tr').value.trim()
+          } : null,
+          ingredients: document.getElementById('product-ingredients-tr').value.trim() ? {
+            tr: document.getElementById('product-ingredients-tr').value.trim(),
+            en: document.getElementById('product-ingredients-en').value.trim() || document.getElementById('product-ingredients-tr').value.trim()
+          } : null,
+          nutrition: {
+            calories: document.getElementById('product-nutrition-calories').value.trim() || null,
+            protein: document.getElementById('product-nutrition-protein').value.trim() || null,
+            carbs: document.getElementById('product-nutrition-carbs').value.trim() || null,
+            fat: document.getElementById('product-nutrition-fat').value.trim() || null
+          }
+        }
+      };
+
+      if (mode === 'add') {
+        const generatedId = nameTr.toLowerCase()
+          .replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ş/g, 's')
+          .replace(/ı/g, 'i').replace(/ö/g, 'o').replace(/ç/g, 'c')
+          .replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') + '-' + Date.now().toString().slice(-4);
+        
+        productData.id = generatedId;
+        category.items.push(productData);
+      } else {
+        const itemIndex = category.items.findIndex(i => i.id === productId);
+        if (itemIndex > -1) {
+          productData.id = productId;
+          category.items[itemIndex] = productData;
+        }
+      }
+      
+      closeModal('product-modal');
+      renderActiveCategoryProducts();
+      checkChanges();
+    });
+
+    document.getElementById('btn-delete-product').addEventListener('click', () => {
+      if (!confirm('Bu ürünü silmek istediğinizden emin misiniz?')) return;
+      
+      const category = menu.find(c => c.id === activeCategoryId);
+      if (!category) return;
+      
+      const productId = document.getElementById('product-form-id').value;
+      const index = category.items.findIndex(i => i.id === productId);
+      
+      if (index > -1) {
+        category.items.splice(index, 1);
+        closeModal('product-modal');
+        renderActiveCategoryProducts();
+        checkChanges();
+      }
+    });
+
+    // ==========================================
+    // Save & Discard API Handlers
+    // ==========================================
+    document.getElementById('btn-discard-changes').addEventListener('click', () => {
+      if (!confirm('Tüm kaydedilmemiş değişiklikler geri alınacaktır. Emin misiniz?')) return;
+      menu = JSON.parse(JSON.stringify(originalMenu));
+      renderCategories();
+      renderActiveCategoryProducts();
+      checkChanges();
+    });
+
+    document.getElementById('btn-save-changes').addEventListener('click', async () => {
+      try {
+        const response = await fetch('/api/menu', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(menu)
+        });
+        
+        if (!response.ok) {
+          throw new Error('Kaydetme hatası.');
+        }
+        
+        originalMenu = JSON.parse(JSON.stringify(menu));
+        checkChanges();
+        alert('Menü başarıyla kaydedildi!');
+      } catch (err) {
+        alert('Menü kaydedilirken hata oluştu: ' + err.message);
+      }
+    });
+
+    // ==========================================
+    // Modal Helpers
+    // ==========================================
+    window.openModal = (modalId) => {
+      document.getElementById(modalId).classList.add('active');
+    };
+
+    window.closeModal = (modalId) => {
+      document.getElementById(modalId).classList.remove('active');
+    };
+
+    document.getElementById('btn-logout').addEventListener('click', async () => {
+      if (!confirm('Güvenli çıkış yapmak istediğinizden emin misiniz?')) return;
+      try {
+        const response = await fetch('/api/auth/logout', { method: 'POST' });
+        if (response.ok) {
+          window.location.href = '/admin/login.html';
+        } else {
+          alert('Çıkış yapılamadı.');
+        }
+      } catch (err) {
+        alert('Bağlantı hatası oluştu.');
+      }
+    });
+
+    // File Upload Handler
+    document.getElementById('file-upload-input').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const statusLbl = document.getElementById('upload-status-lbl');
+      statusLbl.textContent = 'Görsel yükleniyor...';
+      statusLbl.style.color = 'var(--text-muted)';
+      statusLbl.style.display = 'block';
+
+      const formData = new FormData();
+      formData.append('image', file);
+
+      try {
+        const response = await fetch('/api/upload', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          document.getElementById('product-image').value = data.imageUrl;
+          statusLbl.textContent = 'Yükleme başarılı!';
+          statusLbl.style.color = 'green';
+        } else {
+          statusLbl.textContent = 'Yükleme hatası: ' + (data.error || 'Bilinmeyen hata');
+          statusLbl.style.color = 'red';
+        }
+      } catch (err) {
+        statusLbl.textContent = 'Bağlantı hatası.';
+        statusLbl.style.color = 'red';
+      }
+    });
+
+    // Load initial
+    loadMenu();
+  </script>
+</body>
+</html>

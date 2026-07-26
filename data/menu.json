@@ -1,0 +1,4452 @@
+[
+  {
+    "id": "sicak-baslangiclar",
+    "name": {
+      "tr": "Sıcak Başlangıçlar",
+      "en": "Hot Appetizers"
+    },
+    "items": [
+      {
+        "id": "gunun-corbasi",
+        "name": {
+          "tr": "Günün Çorbası",
+          "en": "Soup of the Day"
+        },
+        "description": {
+          "tr": "Günlük taze malzemelerle hazırlanan geleneksel şef çorbası.",
+          "en": "Traditional chef's soup prepared daily with fresh ingredients."
+        },
+        "price": 250,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Günlük değişen mevsimsel taze sebzeler ve et suyu.",
+            "en": "Daily changing seasonal fresh vegetables and meat broth."
+          },
+          "allergens": {
+            "tr": "Servis personeline danışınız.",
+            "en": "Please consult your server."
+          },
+          "pairing": {
+            "tr": "Taze bakır maşrapada Yayık Ayranı.",
+            "en": "Freshly churned foaming Ayran."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "icli-kofte",
+        "name": {
+          "tr": "İçli Köfte",
+          "en": "Stuffed Bulgur Balls (İçli Köfte)"
+        },
+        "description": {
+          "tr": "Bulgur kapuğu içerisinde zırh kıyması, ceviz ve özel baharat dolgusu.",
+          "en": "Bulgur wheat balls stuffed with minced meat, walnuts, and traditional spices."
+        },
+        "price": 250,
+        "image": null,
+        "badge": {
+          "tr": "Gurme",
+          "en": "Gourmet"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Esmer bulgur, dana zırh kıyması, soğan, ceviz içi, tereyağı, özel baharat harmanı.",
+            "en": "Fine bulgur, minced beef, onions, walnuts, butter, spice blend."
+          },
+          "allergens": {
+            "tr": "Gluten, Ceviz.",
+            "en": "Gluten, Walnuts."
+          },
+          "pairing": {
+            "tr": "Soğuk şalgam suyu.",
+            "en": "Cold turnip juice (Şalgam)."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kuru-antep-dolma",
+        "name": {
+          "tr": "Kuru Antep Dolması",
+          "en": "Dried Antep Stuffed Vegetables"
+        },
+        "description": {
+          "tr": "Kurutulmuş sebzeler içerisine nane ve sarımsak esintili zırh kıyması ve pirinç dolgusu.",
+          "en": "Dried eggplants and peppers stuffed with minced meat, rice, mint, and garlic."
+        },
+        "price": 170,
+        "image": null,
+        "badge": {
+          "tr": "Antep Mutfağı",
+          "en": "Antep Cuisine"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kurutulmuş Antep patlıcanı ve biberi, pirinç, kuzu kıyma, kuru nane, sarımsak, sumak ekşisi.",
+            "en": "Dried eggplants and peppers, rice, minced lamb, dry mint, garlic, sumac."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Köpüklü yayık ayranı.",
+            "en": "Foaming yayık ayran."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kiremitte-mantar",
+        "name": {
+          "tr": "Kiremitte Mantar",
+          "en": "Mushrooms in Clay Tile"
+        },
+        "description": {
+          "tr": "Özel kiremit kapta fırınlanmış, tereyağlı ve erimiş kaşar peynirli kültür mantarları.",
+          "en": "Cultured mushrooms oven-baked in a traditional clay tile with butter and melted kashar cheese."
+        },
+        "price": 450,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kültür mantarı, taze kaşar peyniri, tereyağı, sarımsak, pul biber.",
+            "en": "Cultured mushrooms, fresh kashar cheese, butter, garlic, chili flakes."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü (kaşar, tereyağı).",
+            "en": "Dairy (Kashar, butter)."
+          },
+          "pairing": {
+            "tr": "Hafif gövdeli kırmızı şaraplar.",
+            "en": "Light-bodied red wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kiremitte-patlican",
+        "name": {
+          "tr": "Kiremitte Patlıcan",
+          "en": "Eggplants in Clay Tile"
+        },
+        "description": {
+          "tr": "Taş fırında közlenmiş patlıcanların tereyağı, sarımsak ve kaşar peyniriyle fırınlanmış sıcak sunumu.",
+          "en": "Smoky oven-roasted eggplants baked in a clay tile with butter, garlic, and kashar cheese."
+        },
+        "price": 450,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Közlenmiş patlıcan, tereyağı, taze kaşar peyniri, sarımsak, domates sos.",
+            "en": "Roasted eggplant, butter, fresh kashar cheese, garlic, tomato sauce."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü (kaşar, tereyağı).",
+            "en": "Dairy (Kashar, butter)."
+          },
+          "pairing": {
+            "tr": "Gövdesiz kırmızı şaraplar.",
+            "en": "Light red wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kozde-sogan-sarimsak",
+        "name": {
+          "tr": "Közde Soğan / Sarımsak",
+          "en": "Grilled Onion / Garlic"
+        },
+        "description": {
+          "tr": "Ocakbaşında ağır ağır közlenmiş soğan ve sarımsaklar, sızma zeytinyağı ve nar ekşisi sos ile.",
+          "en": "Onions and garlic heads slowly grilled over charcoal, finished with olive oil and pomegranate molasses."
+        },
+        "price": 380,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Yerli soğan, taze sarımsak başları, sızma zeytinyağı, nar ekşisi, sumak.",
+            "en": "Local onions, fresh garlic heads, extra virgin olive oil, pomegranate molasses, sumac."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Tüm et ve kebap yemekleri.",
+            "en": "Excellent with all kebabs and meat dishes."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "pastirmali-humus",
+        "name": {
+          "tr": "Pastırmalı Humus",
+          "en": "Hummus with Pastrami"
+        },
+        "description": {
+          "tr": "Tereyağında sotelenmiş çıtır pastırma dilimleri ile sıcak servis edilen kadifemsi humus lezzeti.",
+          "en": "Velvety warm hummus served with crispy pastrami slices sautéed in melted butter and pine nuts."
+        },
+        "price": 470,
+        "image": "/images/meze_hummus.webp",
+        "badge": {
+          "tr": "Şefin Seçimi",
+          "en": "Chef's Choice"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Haşlanmış nohut, tahin, limon suyu, sarımsak, tereyağı, çam fıstığı, çemenli pastırma.",
+            "en": "Nohut (chickpeas), tahini, lemon juice, garlic, butter, pine nuts, seasoned pastrami."
+          },
+          "allergens": {
+            "tr": "Susam (tahin), Çam Fıstığı.",
+            "en": "Sesame (tahini), Pine Nuts."
+          },
+          "pairing": {
+            "tr": "Ancyra Öküzgözü kırmızı şarap veya buzlu rakı.",
+            "en": "Ancyra Öküzgözü red wine or rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "soguk-mezeler",
+    "name": {
+      "tr": "Soğuk Mezeler",
+      "en": "Cold Starters"
+    },
+    "items": [
+      {
+        "id": "cigkofte",
+        "name": {
+          "tr": "Çiğköfte",
+          "en": "Çiğköfte (Spiced Tartar)"
+        },
+        "description": {
+          "tr": "Geleneksel Şirnaz çiğ köftesi, göbek marul ve limon dilimleriyle.",
+          "en": "Steak tartar with cracked wheat and traditional spices, served with fresh lettuce and lemon."
+        },
+        "price": 480,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "İnce esmer bulgur, zırh kıyması, isot, ev yapımı salça, taze baharatlar, sarımsak.",
+            "en": "Fine brown bulgur, minced beef, isot pepper, house tomato paste, spices, garlic."
+          },
+          "allergens": {
+            "tr": "Gluten, Ceviz (eser miktarda).",
+            "en": "Gluten, Walnuts (trace amount)."
+          },
+          "pairing": {
+            "tr": "Soğuk duble şalgam.",
+            "en": "Cold double şalgam juice."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "muhammara",
+        "name": {
+          "tr": "Muhammara",
+          "en": "Muhammara"
+        },
+        "description": {
+          "tr": "Közlenmiş biber, ceviz içi, galeta unu, tahin, nar ekşisi ve baharatların nefis uyumu.",
+          "en": "A rich dip of crushed walnuts, toasted stale breadcrumbs, tahini, olive oil, garlic, and pomegranate."
+        },
+        "price": 370,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Köz kırmızı biber, ceviz içi, galeta unu, tahin, sızma zeytinyağı, kimyon, nar ekşisi.",
+            "en": "Roasted red pepper, walnuts, breadcrumbs, tahini, olive oil, cumin, pomegranate molasses."
+          },
+          "allergens": {
+            "tr": "Ceviz, Gluten, Susam.",
+            "en": "Walnuts, Gluten, Sesame."
+          },
+          "pairing": {
+            "tr": "Ancyra Narince beyaz şarap.",
+            "en": "Ancyra Narince white wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "patlican-ezme",
+        "name": {
+          "tr": "Patlıcan Ezme",
+          "en": "Eggplant Paste"
+        },
+        "description": {
+          "tr": "Közlenmiş patlıcanların yoğurt, sarımsak ve sızma zeytinyağı ile pürüzsüz uyumu.",
+          "en": "Puree of grilled eggplants mixed with thick garlic yoghurt and extra virgin olive oil."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Köz patlıcan, süzme yoğurt, sarımsak, zeytinyağı, tuz.",
+            "en": "Roasted eggplant, strained yoghurt, garlic, olive oil, salt."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Buzlu Sarı Zeybek rakısı.",
+            "en": "Buzzed Sarı Zeybek rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "saksuka",
+        "name": {
+          "tr": "Soslu Patlıcan / Şakşuka",
+          "en": "Eggplant with Sauce (Şakşuka)"
+        },
+        "description": {
+          "tr": "Kızartılmış patlıcan, biber ve patates küplerinin sarımsaklı özel domates sosuyla buluşması.",
+          "en": "Fried cubes of eggplant, sweet peppers, and potatoes tossed in a rich garlic tomato sauce."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Patlıcan, yeşil biber, patates, domates, sarımsak, zeytinyağı.",
+            "en": "Eggplant, green pepper, potato, tomato, garlic, olive oil."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Hafif gövdeli roze şaraplar.",
+            "en": "Light-bodied rosé wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "haydari",
+        "name": {
+          "tr": "Haydari",
+          "en": "Haydari (Mint & Yoghurt)"
+        },
+        "description": {
+          "tr": "Kıvamlı süzme yoğurt, taze nane esintisi, sarımsak ve tereyağlı dokunuş.",
+          "en": "Thick strained yoghurt flavored with garlic, dried mint, dill, and a touch of melted butter."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Süzme yoğurt, taze nane, sarımsak, dereotu, zeytinyağı.",
+            "en": "Strained yoghurt, dry mint, garlic, dill, olive oil."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Geleneksel soğuk mezeler.",
+            "en": "Matches traditional cold starters."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yogurtlu-semizotu",
+        "name": {
+          "tr": "Yoğurtlu Semizotu",
+          "en": "Purslane with Yoghurt"
+        },
+        "description": {
+          "tr": "Körpe semizotu yapraklarının sarımsaklı süzme yoğurt ve zeytinyağıyla buluşması.",
+          "en": "Fresh purslane leaves tossed with garlic-infused strained yoghurt and extra virgin olive oil."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Yabani semizotu, süzme yoğurt, sarımsak, sızma zeytinyağı.",
+            "en": "Wild purslane, strained yoghurt, garlic, olive oil."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Beyaz şaraplar.",
+            "en": "Light white wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "taze-fasulye",
+        "name": {
+          "tr": "Z.Yağlı Taze Fasülye",
+          "en": "Green Beans with Olive Oil"
+        },
+        "description": {
+          "tr": "Taze çalı fasulyelerinin domates ve sızma zeytinyağında ağır ağır pişirilmesi.",
+          "en": "Fresh green flat beans slow-cooked in a sauce of fresh tomatoes, onions, and extra virgin olive oil."
+        },
+        "price": 370,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Taze fasulye, domates, soğan, sızma zeytinyağı, kesme şeker, tuz.",
+            "en": "Green beans, tomato, onion, olive oil, sugar, salt."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Sultaniye Emir beyaz şarap.",
+            "en": "Sultaniye Emir white wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "canak-enginar",
+        "name": {
+          "tr": "Z.Yağlı Çanak Enginar",
+          "en": "Artichoke with Olive Oil"
+        },
+        "description": {
+          "tr": "Taze garnitürler ve bezelye ile doldurulmuş, zeytinyağlı ve dereotlu çanak enginar.",
+          "en": "Artichoke heart slow-cooked in olive oil, stuffed with carrots, potatoes, peas, and fresh dill."
+        },
+        "price": 410,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Çanak enginar, patates, havuç, bezelye, zeytinyağı, portakal suyu, dereotu.",
+            "en": "Artichoke cup, potato, carrot, peas, olive oil, orange juice, dill."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Kavaklıdere Misket.",
+            "en": "Kavaklıdere Misket white wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "fasulye-pilaki",
+        "name": {
+          "tr": "Fasülye Pilaki",
+          "en": "Beans in Olive Oil"
+        },
+        "description": {
+          "tr": "İri kuru fasulyelerin havuç, patates ve bol zeytinyağı ile pişen geleneksel lezzeti.",
+          "en": "White kidney beans simmered with carrots, potatoes, garlic, and extra virgin olive oil."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuru fasulye, havuç, patates, soğan, zeytinyağı, domates salçası, maydanoz.",
+            "en": "Haricot beans, carrots, potatoes, onions, olive oil, tomato paste, parsley."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Soğuk alkolsüz içecekler.",
+            "en": "Any cold beverage."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "acili-ezme",
+        "name": {
+          "tr": "Acılı Ezme",
+          "en": "Hot Spicy Tomato Paste"
+        },
+        "description": {
+          "tr": "Satırla kıyılmış domates, biber ve yeşilliklerin bol baharat, zeytinyağı ve nar ekşili sosu.",
+          "en": "Finely minced fresh tomatoes, chili peppers, and herbs dressed with olive oil and pomegranate molasses."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Domates, yeşil biber, kırmızı biber, soğan, maydanoz, nane, nar ekşisi, pul biber, isot.",
+            "en": "Tomato, green pepper, red pepper, onion, parsley, mint, pomegranate molasses, chili, isot."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Buzlu rakı.",
+            "en": "Buzzed Rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "gaziantep-tursu",
+        "name": {
+          "tr": "Gaziantep Turşu",
+          "en": "Mixed Gaziantep Pickles"
+        },
+        "description": {
+          "tr": "Gaziantep usulü ev yapımı sirkeli ve sarımsaklı karışık turşu çeşitleri.",
+          "en": "Assorted house-made crispy vegetables pickled in garlic, vinegar, and brine."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Karışık mevsim sebzeleri (kelek, acur, biber, lahana), sarımsak, sirke, salamura tuzu.",
+            "en": "Mixed seasonal vegetables (gherkin, wild melon, peppers, cabbage), garlic, vinegar, salt."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Ocakbaşı kebaplarının tamamı.",
+            "en": "Great with all grilled items."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "fava",
+        "name": {
+          "tr": "Fava",
+          "en": "Fava (Fava Bean Puree)"
+        },
+        "description": {
+          "tr": "Geleneksel kuru bakla ezmesi, sızma zeytinyağı ve kırmızı soğan piyazı.",
+          "en": "Silky broad bean puree topped with red onions, dill, and a drizzle of olive oil."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuru bakla, dereotu, soğan, limon, sızma zeytinyağı.",
+            "en": "Fava beans, dill, onions, lemon, olive oil."
+          },
+          "allergens": {
+            "tr": "Bakla alerjisi olanlar tüketmemelidir.",
+            "en": "Fava beans (avoid if G6PD deficient)."
+          },
+          "pairing": {
+            "tr": "Ancyra Narince beyaz şarap.",
+            "en": "Ancyra Narince white wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "atom",
+        "name": {
+          "tr": "Atom",
+          "en": "Atom (Spicy Yoghurt)"
+        },
+        "description": {
+          "tr": "Süzme yoğurt üzerinde tereyağında kızdırılmış kurutulmuş Arnavut biberlerinin acısı.",
+          "en": "Creamy strained garlic yoghurt topped with pan-seared spicy hot Albanian dried red peppers in butter."
+        },
+        "price": 345,
+        "image": null,
+        "badge": {
+          "tr": "Çok Acı",
+          "en": "Extremely Hot"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Süzme yoğurt, kuru Arnavut biberi, tereyağı, zeytinyağı, sarımsak.",
+            "en": "Strained yoghurt, dried red peppers, butter, olive oil, garlic."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Buzlu rakı.",
+            "en": "Ice cold Rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "salatalar",
+    "name": {
+      "tr": "Salatalar",
+      "en": "Salads"
+    },
+    "items": [
+      {
+        "id": "coban-salata",
+        "name": {
+          "tr": "Çoban Salata",
+          "en": "Shepherd's Salad"
+        },
+        "description": {
+          "tr": "İnce kıyılmış domates, salatalık, biber, soğan ve maydanozun zeytinyağlı limonlu sunumu.",
+          "en": "Finely diced tomatoes, cucumbers, green peppers, onions, and flat-leaf parsley in olive oil and lemon."
+        },
+        "price": 380,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Domates, salatalık, sivri biber, kuru soğan, maydanoz, zeytinyağı, limon.",
+            "en": "Tomato, cucumber, sweet pepper, onion, parsley, olive oil, lemon."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Tüm ocakbaşı etleri.",
+            "en": "Perfect with all grilled items."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      },
+      {
+        "id": "sogus-salata",
+        "name": {
+          "tr": "Söğüş Salata",
+          "en": "Cold Cuts Salad"
+        },
+        "description": {
+          "tr": "Soyulmuş iri domates, badem salatalık ve tatlı biber dilimlerinin zeytinyağlı sunumu.",
+          "en": "Chunky cuts of skinless field tomatoes, cucumbers, and sweet long peppers with a splash of olive oil."
+        },
+        "price": 330,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Domates, badem salatalık, köy biberi, zeytinyağı, kekik.",
+            "en": "Tomato, baby cucumber, village pepper, olive oil, oregano."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Ferahlatıcı meze alternatifi.",
+            "en": "Refreshing starter companion."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      },
+      {
+        "id": "gobek-salata",
+        "name": {
+          "tr": "Göbek Salata",
+          "en": "Lettuce Salad"
+        },
+        "description": {
+          "tr": "Çıtır çıtır taze göbek marul yaprakları, mısır ve zeytinyağlı limon sosu.",
+          "en": "Crisp iceberg lettuce leaves tossed with sweet corn, lemon juice, and extra virgin olive oil."
+        },
+        "price": 380,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Göbek marul, tatlı mısır, zeytinyağı, limon suyu, nar ekşisi.",
+            "en": "Iceberg lettuce, sweet corn, olive oil, lemon, pomegranate syrup."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Tavuk ve kanat ızgaraları.",
+            "en": "Nice with chicken skewers."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      },
+      {
+        "id": "mevsim-salata",
+        "name": {
+          "tr": "Mevsim Salata",
+          "en": "Season Salad"
+        },
+        "description": {
+          "tr": "Rendelenmiş havuç, kırmızı lahana ve ince kıyılmış marulun limonlu sızma zeytinyağlı uyumu.",
+          "en": "Shredded carrots, red cabbage, and lettuce dressed with lemon juice and extra virgin olive oil."
+        },
+        "price": 380,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Marul, kırmızı lahana, havuç, limon, zeytinyağı, elma sirkesi.",
+            "en": "Lettuce, red cabbage, carrots, lemon, olive oil, cider vinegar."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Fırın ve ızgara yemekleri.",
+            "en": "Good with oven baked dishes."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      },
+      {
+        "id": "roka-salata",
+        "name": {
+          "tr": "Roka Salata",
+          "en": "Rocket Salad"
+        },
+        "description": {
+          "tr": "Taze roka yaprakları, kiraz domates, tulum peyniri ve ceviz içi, balzamik sirke eşliğinde.",
+          "en": "Fresh peppery arugula leaves topped with cherry tomatoes, crumbled Turkish tulum cheese, and walnuts."
+        },
+        "price": 380,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Roka yaprakları, kiraz domates, İzmir tulum peyniri, ceviz içi, balzamik sirke, zeytinyağı.",
+            "en": "Arugula, cherry tomatoes, tulum cheese, walnuts, balsamic vinegar, olive oil."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü (tulum peyniri), Ceviz.",
+            "en": "Dairy (Tulum cheese), Walnuts."
+          },
+          "pairing": {
+            "tr": "Kırmızı şarap çeşitleri.",
+            "en": "Assorted red wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      },
+      {
+        "id": "gavurdagi-salata",
+        "name": {
+          "tr": "Gavurdağı Salatası",
+          "en": "Gavurdağı Salad"
+        },
+        "description": {
+          "tr": "Çok ince zırhlanmış domates ve salatalık, bol kıyılmış Antep cevizi, sızma nar ekşisi sosu.",
+          "en": "Extremely finely chopped tomatoes and cucumbers mixed with walnuts, extra virgin olive oil, and sumac-infused pomegranate dressing."
+        },
+        "price": 500,
+        "image": null,
+        "badge": {
+          "tr": "Klasik",
+          "en": "Classic"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "İnce kıyılmış domates, salatalık, yeşil biber, kuru soğan, maydanoz, Antep cevizi, nar ekşisi, zeytinyağı.",
+            "en": "Minced tomato, cucumber, peppers, onion, parsley, walnuts, pomegranate molasses, olive oil."
+          },
+          "allergens": {
+            "tr": "Ceviz.",
+            "en": "Walnuts."
+          },
+          "pairing": {
+            "tr": "Şirnaz Kebap ve Kuzu Şiş.",
+            "en": "Matches perfectly with Lamb Shish or Adana Kebab."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      },
+      {
+        "id": "peynirli-salata",
+        "name": {
+          "tr": "Peynirli Salata",
+          "en": "Cheese Salad"
+        },
+        "description": {
+          "tr": "Mevsim yeşillikleri üzerine serpiştirilmiş blok beyaz peynir dilimleri ve zeytinyağlı limon sosu.",
+          "en": "Fresh garden greens topped with slices of rich Turkish white cheese (Feta style) and black olives."
+        },
+        "price": 500,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Karışık Akdeniz yeşillikleri, Ezine beyaz peyniri, siyah zeytin, çeri domates, zeytinyağı, limon.",
+            "en": "Med greens, feta cheese, black olives, cherry tomatoes, olive oil, lemon."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Ancyra Kalecik Karası roze şarap.",
+            "en": "Ancyra Kalecik Karası rosé."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "180 kcal",
+            "protein": "3g",
+            "carbs": "10g",
+            "fat": "14g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "kebaplar",
+    "name": {
+      "tr": "Kebaplar",
+      "en": "Kebabs"
+    },
+    "items": [
+      {
+        "id": "kuzu-sis-200g",
+        "name": {
+          "tr": "Kuzu Şiş (200gr)",
+          "en": "Lamb Shish Kebab (200gr)"
+        },
+        "description": {
+          "tr": "Özel marinasyonla dinlendirilmiş süt kuzu but etleri, közlenmiş biber ve lavaş eşliğinde.",
+          "en": "Tender cubes of milk-fed lamb skewers marinated in special spices and grilled over hot coals."
+        },
+        "price": 1250,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu eti marinasyonu, zeytinyağı, pul biber, kekik, lavaş.",
+            "en": "Marinated lamb, olive oil, red pepper flakes, oregano, flatbread."
+          },
+          "allergens": {
+            "tr": "Gluten (lavaş ile servis edildiğinde).",
+            "en": "Gluten (due to flatbread)."
+          },
+          "pairing": {
+            "tr": "Boğazkere kırmızı şarap veya soğuk şalgam.",
+            "en": "Boğazkere red wine or turnip juice."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "satir-kebap-220g",
+        "name": {
+          "tr": "Satır Kebap (220gr)",
+          "en": "Satır Kebab (220gr)"
+        },
+        "description": {
+          "tr": "Satır kıyması ile el yapımı hazırlanan, kömür ateşinde pişen Şirnaz tarzı kebap.",
+          "en": "Kebab prepared with meat minced using a traditional double-handled cleaver (satır)."
+        },
+        "price": 1200,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Dana ve kuzu kıyma karışımı, tatlı kırmızı toz biber, tuz, iç yağı.",
+            "en": "Beef and lamb blend cleaver-minced, red pepper, salt, tallow."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Sarı Zeybek Rakı veya Ancyra Öküzgözü.",
+            "en": "Sarı Zeybek Rakı or Ancyra Öküzgözü."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "adana-kebap-170g",
+        "name": {
+          "tr": "Adana Kebap (170gr)",
+          "en": "Adana Kebab (170gr)"
+        },
+        "description": {
+          "tr": "Zırh kıyması ve kuyruk yağı ile hazırlanan, pul biberli acı ocakbaşı klasiği.",
+          "en": "Hand-minced spicy lamb kebab seasoned with red pepper flakes and cooked on wide skewers."
+        },
+        "price": 950,
+        "image": "/images/kebab_adana.webp",
+        "badge": {
+          "tr": "En Çok Satan",
+          "en": "Best Seller"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu zırh kıyması, kuyruk yağı, pul biber, tuz, köz sebzeler.",
+            "en": "Hand-minced lamb, tail fat, chili pepper, salt, grilled veggies."
+          },
+          "allergens": {
+            "tr": "Gluten (servis tabağındaki lavaş nedeniyle).",
+            "en": "Gluten (due to serving flatbread)."
+          },
+          "pairing": {
+            "tr": "Acılı şalgam veya buzlu duble rakı.",
+            "en": "Spicy turnip juice or double rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "620 kcal",
+            "protein": "38g",
+            "carbs": "15g",
+            "fat": "44g"
+          }
+        }
+      },
+      {
+        "id": "urfa-kebap-170g",
+        "name": {
+          "tr": "Urfa Kebap (170gr)",
+          "en": "Urfa Kebab (170gr)"
+        },
+        "description": {
+          "tr": "Zırh kıyması ve tuzla yoğrulan, acısız ve sade lezzet arayanlara özel kebap.",
+          "en": "Hand-minced non-spicy lamb kebab, seasoned with salt and spices only."
+        },
+        "price": 950,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu zırh kıyması, kuyruk yağı, tuz, közlenmiş domates ve biber.",
+            "en": "Hand-minced lamb, tail fat, salt, grilled tomatoes and peppers."
+          },
+          "allergens": {
+            "tr": "Gluten (lavaş nedeniyle).",
+            "en": "Gluten (due to flatbread)."
+          },
+          "pairing": {
+            "tr": "Ayran veya hafif gövdeli şaraplar.",
+            "en": "Cold ayran or light red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "620 kcal",
+            "protein": "38g",
+            "carbs": "15g",
+            "fat": "44g"
+          }
+        }
+      },
+      {
+        "id": "beyti-kebap-200g",
+        "name": {
+          "tr": "Beyti Kebap (200gr)",
+          "en": "Beyti Kebab (200gr)"
+        },
+        "description": {
+          "tr": "İnce lavaşa sarılmış kebap dilimleri, üzerine tereyağlı özel domates sosu ve süzme yoğurt yatağı.",
+          "en": "Spicy minced lamb kebab rolled in flatbread, sliced and topped with hot tomato-butter sauce and garlic yoghurt."
+        },
+        "price": 1050,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu kebabı, el açması lavaş, süzme yoğurt, özel domates sosu, kızgın tereyağı.",
+            "en": "Lamb kebab, flatbread, strained yoghurt, tomato sauce, browned butter."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü.",
+            "en": "Gluten, Dairy."
+          },
+          "pairing": {
+            "tr": "Kalecik Karası kırmızı şarap.",
+            "en": "Kalecik Karası red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "620 kcal",
+            "protein": "38g",
+            "carbs": "15g",
+            "fat": "44g"
+          }
+        }
+      },
+      {
+        "id": "fistikli-kebap-200g",
+        "name": {
+          "tr": "Fıstıklı Kebap (200gr)",
+          "en": "Pistachio Kebab (200gr)"
+        },
+        "description": {
+          "tr": "Antep fıstığı taneleri ve kuzu zırh kıymasının muhteşem uyumuyla ocakbaşında harikalar yaratır.",
+          "en": "Hand-minced lamb kebab loaded with premium green Antep pistachios."
+        },
+        "price": 1150,
+        "image": null,
+        "badge": {
+          "tr": "Gurme Tercihi",
+          "en": "Gourmet's Pick"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu zırh kıyması, toz ve bütün Antep fıstığı, tuz, baharatlar.",
+            "en": "Minced lamb, whole and ground Antep pistachios, salt, spices."
+          },
+          "allergens": {
+            "tr": "Antep Fıstığı.",
+            "en": "Pistachios."
+          },
+          "pairing": {
+            "tr": "Öküzgözü - Boğazkere kupajı.",
+            "en": "Öküzgözü - Boğazkere red blend."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "domatesli-kebap-200g",
+        "name": {
+          "tr": "Domatesli Kebap (200gr)",
+          "en": "Tomato Kebab (200gr)"
+        },
+        "description": {
+          "tr": "Şişe sırayla dizilen sulu domates dilimleri ve kebap köftelerinin fırınlanmış tadı.",
+          "en": "Alternating layers of minced beef/lamb patties and juicy tomato slices grilled together on a wide skewer."
+        },
+        "price": 1050,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu kıyması, tarla domatesleri, tuz, közlenmiş biber.",
+            "en": "Lamb mince, field tomatoes, salt, grilled pepper."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Rakı (Yeni Seri).",
+            "en": "Rakı (Yeni Seri)."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "hashasli-kebap-200g",
+        "name": {
+          "tr": "Haşhaşlı Kebap (200gr)",
+          "en": "Poppy Seed Kebab (200gr)"
+        },
+        "description": {
+          "tr": "Zırh kıymasına eklenen çıtır haşhaş taneleri ve sarımsak aroması ile özel bir lezzet.",
+          "en": "Traditional cleaver-minced lamb kebab flavored with poppy seeds, garlic, and red peppers."
+        },
+        "price": 1150,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu zırh kıyması, mavi haşhaş tohumları, sarımsak, kırmızı kapya biber.",
+            "en": "Minced lamb, blue poppy seeds, garlic, red peppers."
+          },
+          "allergens": {
+            "tr": "Haşhaş Tohumu.",
+            "en": "Poppy seeds."
+          },
+          "pairing": {
+            "tr": "Syrah kırmızı şarap.",
+            "en": "Syrah red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "yogurtlu-kebap-170g",
+        "name": {
+          "tr": "Yoğurtlu Kebap (170gr)",
+          "en": "Kebab with Yoghurt (170gr)"
+        },
+        "description": {
+          "tr": "Pide parçaları üzerinde kebap dilimleri, sarımsaklı yoğurt ve üzerine gezdirilen tereyağlı sos.",
+          "en": "Grilled kebab slices served over toasted flatbread cubes, topped with warm tomato-butter sauce and garlic yoghurt."
+        },
+        "price": 1050,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kebap eti, tırnak pide, yoğurt, sarımsak, tereyağlı domates sosu.",
+            "en": "Kebab meat, flatbread pieces, strained yoghurt, garlic, tomato-butter sauce."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü.",
+            "en": "Gluten, Dairy."
+          },
+          "pairing": {
+            "tr": "Taze demlenmiş şalgam.",
+            "en": "Fresh house şalgam juice."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "cop-sis-200g",
+        "name": {
+          "tr": "Çöp Şiş (200gr)",
+          "en": "Çöp Şiş (200gr)"
+        },
+        "description": {
+          "tr": "Ufak doğranmış kuzu etlerinin kuyruk yağıyla marine edilerek küçük tahta şişlerde pişirilmesi.",
+          "en": "Small cubes of marinated lamb skewered on tiny wooden sticks and grilled quickly over high flame."
+        },
+        "price": 1150,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Ufak kuzu etleri, kuyruk yağı, kekik, pul biber, kimyon marinasyonu.",
+            "en": "Diced lamb, tail fat, oregano, red pepper flakes, cumin marinade."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Soğuk yayık ayranı.",
+            "en": "Chilled ayran."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "patlicanli-kebap-200g",
+        "name": {
+          "tr": "Patlıcanlı Kebap (200gr)",
+          "en": "Eggplant Kebab (200gr)"
+        },
+        "description": {
+          "tr": "Patlıcan dilimleri ve zırh kıymasının şişte ağır ağır kömürleşmeden pişirilen klasik lezzeti.",
+          "en": "Alternating thick slices of eggplant and seasoned minced lamb skewered and charcoal grilled."
+        },
+        "price": 1200,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kemer patlıcan, kuzu kıyma, tuz, köz biber.",
+            "en": "Local eggplants, minced lamb, salt, grilled pepper."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Beylerbeyi Göbek Rakı.",
+            "en": "Beylerbeyi Göbek Rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "kuzu-pirzola-3adet",
+        "name": {
+          "tr": "Kuzu Pirzola (3 adet)",
+          "en": "Lamb Chops (3 pcs)"
+        },
+        "description": {
+          "tr": "Süt kuzusundan kesilen taze pirzolalar, kekikli ve zeytinyağlı marineyle yumuşacık ızgarada.",
+          "en": "Tender milk-fed lamb rib chops lightly marinated in olive oil and wild oregano."
+        },
+        "price": 1250,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu pirzola kalemleri, zeytinyağı, dağ kekiği, tuz.",
+            "en": "Lamb chops, olive oil, wild thyme, salt."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Cabernet Sauvignon şarap.",
+            "en": "Cabernet Sauvignon red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "kuzu-kaburga-6adet",
+        "name": {
+          "tr": "Kuzu Kaburga (6 adet)",
+          "en": "Lamb Riblets (6 pcs)"
+        },
+        "description": {
+          "tr": "Kömür ateşinde nar gibi kızarmış, içi sulu çıtır kuzu kaburga dilimleri.",
+          "en": "Crisp and juicy lamb riblets grilled slowly over charcoal embers."
+        },
+        "price": 1250,
+        "image": null,
+        "badge": {
+          "tr": "Özel Lezzet",
+          "en": "Special Edition"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu kaburga, deniz tuzu, közlenmiş biber.",
+            "en": "Lamb riblets, sea salt, grilled pepper."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Öküzgözü kırmızı şarap.",
+            "en": "Öküzgözü red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "kuzu-kulbasti-200g",
+        "name": {
+          "tr": "Kuzu Külbastı (200gr)",
+          "en": "Lamb Cutlet (Külbastı 200g)"
+        },
+        "description": {
+          "tr": "İnce dövülmüş kuzu filetonunun baharatlarla sotelenerek ocakbaşında mühürlenmesi.",
+          "en": "Thinly beaten fillets of lamb tenderized and grilled with a dash of garlic-infused oil."
+        },
+        "price": 1290,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu külbastı eti, sarımsak, zeytinyağı marinasyonu, tuz.",
+            "en": "Lamb cutlets, garlic, olive oil marinade, salt."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Kalecik Karası şarabı.",
+            "en": "Kalecik Karası red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "kusleme-200g",
+        "name": {
+          "tr": "Küşleme (200gr)",
+          "en": "Küşleme (Tenderloin 200g)"
+        },
+        "description": {
+          "tr": "Kuzunun en değerli sırt eti, hiçbir terbiye gerektirmeden sadece kaya tuzuyla ocakbaşında pişirilir.",
+          "en": "The finest and most tender cut of lamb loin, grilled with just a touch of sea salt."
+        },
+        "price": 1290,
+        "image": null,
+        "badge": {
+          "tr": "Gurme Seçimi",
+          "en": "Gourmet Selection"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu küşleme eti, kaya tuzu.",
+            "en": "Lamb tenderloin (küşleme), sea salt."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Selection Öküzgözü-Boğazkere.",
+            "en": "Selection Öküzgözü-Boğazkere."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "karisik-kebap",
+        "name": {
+          "tr": "Karışık Kebap",
+          "en": "Mixed Kebab Platter"
+        },
+        "description": {
+          "tr": "Adana, Kuzu Şiş, Piliç Şiş ve Kanat lezzetlerinin bir arada sunulduğu görkemli ocakbaşı şöleni.",
+          "en": "A grand assortment of Adana Kebab, Lamb Shish, Chicken Skewers, and Wings served with sides."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Kebap çeşitleri, köz sebzeler, lavaş, soğan piyazı, bulgur pilavı.",
+            "en": "Assorted kebabs, grilled veggies, flatbread, seasoned onions, bulgur pilaf."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Şişe Yeni Rakı veya güçlü kırmızı şaraplar.",
+            "en": "Bottle of Yeni Rakı or rich red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "dana-antrikot-200g",
+        "name": {
+          "tr": "Dana Antrikot (200gr)",
+          "en": "Calf Entrecote (200gr)"
+        },
+        "description": {
+          "tr": "Dry-aged dinlendirilmiş dana antrikot dilimi, ocakbaşı ızgarasında mühürlenmiş.",
+          "en": "Dry-aged thick slice of beef ribeye mühürlenmiş to perfection over charcoal."
+        },
+        "price": 1300,
+        "image": "/images/steak_ribeye.webp",
+        "badge": {
+          "tr": "Klasik",
+          "en": "Classic"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Dana antrikot, deniz tuzu, biberiye esansı.",
+            "en": "Beef ribeye, sea salt, rosemary essence."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Cabarnet Sauvignon-Syrah.",
+            "en": "Cabarnet Sauvignon-Syrah."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "680 kcal",
+            "protein": "52g",
+            "carbs": "2g",
+            "fat": "48g"
+          }
+        }
+      },
+      {
+        "id": "pilic-sis-200g",
+        "name": {
+          "tr": "Piliç Şiş (200gr)",
+          "en": "Chicken Shish Kebab (200gr)"
+        },
+        "description": {
+          "tr": "Soslu tavuk göğsü küplerinin şişe dizilerek kömürde kurutulmadan sulu pişirilmesi.",
+          "en": "Skewers of marinated cubes of chicken breast grilled succulent over charcoal."
+        },
+        "price": 860,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Tavuk eti, yoğurt ve salça marinasyonu, zeytinyağı, sarımsak.",
+            "en": "Chicken breast pieces, yoghurt-pepper paste marinade, olive oil, garlic."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü (marinasyonda yoğurt).",
+            "en": "Dairy (yoghurt in marinade)."
+          },
+          "pairing": {
+            "tr": "Kadeh Şarap Beyaz.",
+            "en": "Glass of chilled white wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      },
+      {
+        "id": "pilic-kanat-8adet",
+        "name": {
+          "tr": "Piliç Kanat (8 adet)",
+          "en": "Chicken Wings (8 pcs)"
+        },
+        "description": {
+          "tr": "Özel baharat sosuyla marine edilerek ocakbaşında çıtır kıvama gelene dek pişen kanatlar.",
+          "en": "Spiced chicken wings skewered and grilled over charcoal until golden crisp."
+        },
+        "price": 900,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Piliç kanat, pul biberli sarımsaklı sos marinasyonu.",
+            "en": "Chicken wings, chili-garlic marinade."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Soğuk bira veya gazlı içecekler.",
+            "en": "Cold lager beer or soft drink."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "540 kcal",
+            "protein": "42g",
+            "carbs": "8g",
+            "fat": "38g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "spesiyaliteler",
+    "name": {
+      "tr": "Spesiyaliteler",
+      "en": "Specials"
+    },
+    "items": [
+      {
+        "id": "sirnaz-kebap-spesiyal",
+        "name": {
+          "tr": "Şirnaz Kebap (170gr)",
+          "en": "Special Şirnaz Kebab (170gr)"
+        },
+        "description": {
+          "tr": "Şefin özel tarifiyle yoğrulmuş, iç harcı zengin Şirnaz imzalı spesiyal kebap.",
+          "en": "The house specialty: hand-minced spicy lamb kebab with secret chef's spices."
+        },
+        "price": 1350,
+        "image": null,
+        "badge": {
+          "tr": "İmza Yemek",
+          "en": "Signature Dish"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Özel kıyma harmanı, şefin gizli baharatları, köz sebzeler.",
+            "en": "Special minced lamb mix, secret chef spices, grilled vegetables."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Tekirdağ Altın Seri rakı.",
+            "en": "Tekirdağ Altın Seri Rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "alinazik-sisten-200g",
+        "name": {
+          "tr": "Alinazik Şişten (200gr)",
+          "en": "Alinazik from Skewer (200gr)"
+        },
+        "description": {
+          "tr": "Sarımsaklı süzme yoğurtlu köz patlıcan yatağında, kömür ızgarasından yeni çıkmış kuzu şiş lokumları.",
+          "en": "Tender lamb shish pieces served on a bed of warm garlic yoghurt and roasted eggplant puree."
+        },
+        "price": 1350,
+        "image": null,
+        "badge": {
+          "tr": "Gurme Klasik",
+          "en": "Gourmet Classic"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Köz patlıcan, süzme yoğurt, sarımsak, kuzu şiş etleri, kızgın tereyağı.",
+            "en": "Roasted eggplant, strained yoghurt, garlic, grilled lamb shish, butter."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Yakut kırmızı şarap veya buzlu rakı.",
+            "en": "Yakut red wine or cold rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kilis-alinazik-170g",
+        "name": {
+          "tr": "Kilis Alinazik Kebaptan (170gr)",
+          "en": "Kilis Alinazik with Kebab (170gr)"
+        },
+        "description": {
+          "tr": "Sarımsaklı köz patlıcan ezmesi üzerinde zırh kıymasından Adana kebap dilimleri ve tereyağlı pul biber sosu.",
+          "en": "Warm eggplant-garlic yoghurt base topped with grilled minced Adana kebab slices and hot butter sauce."
+        },
+        "price": 1350,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Közlenmiş patlıcan yoğurt harmanı, sarımsak, zırh kıyma kebabı, tereyağı.",
+            "en": "Eggplant-yoghurt base, garlic, minced lamb kebab, melted butter."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Beylerbeyi Göbek duble.",
+            "en": "Double Beylerbeyi Göbek Rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kuzu-tandir-kemikli",
+        "name": {
+          "tr": "Kuzu Tandır (Kemikli 300-350gr)",
+          "en": "Kemikli Kuzu Tandır (300-350g)"
+        },
+        "description": {
+          "tr": "Taş fırında kendi suyunda saatlerce pişerek kemiğinden ayrılan pamuk kıvamında kuzu kol eti.",
+          "en": "Bone-in tender lamb slowly oven-baked until falling off the bone, served over rich buttered rice."
+        },
+        "price": 1250,
+        "image": null,
+        "badge": {
+          "tr": "Efsane",
+          "en": "Legendary"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kemikli kuzu eti, tane karabiber, defne yaprağı, tereyağlı iç pilav.",
+            "en": "Bone-in lamb meat, peppercorns, bay leaves, buttered rice."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü (pilavda tereyağı).",
+            "en": "Dairy (butter in rice)."
+          },
+          "pairing": {
+            "tr": "Selection Öküzgözü-Boğazkere.",
+            "en": "Selection Öküzgözü-Boğazkere."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "coban-kavurma-180g",
+        "name": {
+          "tr": "Çoban Kavurma (180gr)",
+          "en": "Çoban Kavurma (180gr)"
+        },
+        "description": {
+          "tr": "Sac üzerinde soğan, sarımsak, biber ve domateslerle sotelenmiş yumuşacık kuzu kavurma.",
+          "en": "Sautéed cubes of tender lamb tossed with shallots, garlic, tomatoes, and peppers on a hot iron plate."
+        },
+        "price": 1250,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Küp kuzu eti, arpacık soğan, biber, domates, sarımsak, tereyağı, kekik.",
+            "en": "Diced lamb, pearl onions, peppers, tomato, garlic, butter, oregano."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Ancyra Merlot kırmızı şarap.",
+            "en": "Ancyra Merlot red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sirnaz-kavurma-180g",
+        "name": {
+          "tr": "Şirnaz Kavurma (180gr)",
+          "en": "Special Şirnaz Kavurma (180gr)"
+        },
+        "description": {
+          "tr": "Şirnaz'ın fırınından güveçte pişen, özel baharatlı kuzu kavurma spesiyali.",
+          "en": "House special oven-baked lamb stir-fry cooked in a traditional clay pot."
+        },
+        "price": 1250,
+        "image": null,
+        "badge": {
+          "tr": "Güveçte Özel",
+          "en": "Special in Clay Pot"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Özel kuzu eti parçaları, köy biberi, sarımsak tereyağı sosu, taze kaşar erimesi.",
+            "en": "Tender lamb pieces, village peppers, garlic-butter sauce, melted kashar."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü.",
+            "en": "Dairy."
+          },
+          "pairing": {
+            "tr": "Güçlü gövdeli kırmızı şaraplar.",
+            "en": "Full-bodied red wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "et-sote-180g",
+        "name": {
+          "tr": "Et Sote (180gr)",
+          "en": "Beef Saute (180gr)"
+        },
+        "description": {
+          "tr": "Tavada renkli biberler, domates ve sarımsaklı soslu leziz et sote tabağı.",
+          "en": "Sautéed beef strips cooked in a skillet with bell peppers, tomatoes, and garlic."
+        },
+        "price": 1200,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Dana eti lokumları, soğan, yeşil biber, domates sosu, kekik.",
+            "en": "Beef tenderloin pieces, onion, green pepper, tomato sauce, oregano."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Mevsim salata.",
+            "en": "Seasonal salad."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "ocakbasi-masada",
+    "name": {
+      "tr": "Ocakbaşı Masada",
+      "en": "Charcoal Table Experience"
+    },
+    "items": [
+      {
+        "id": "beyaz-et-kg",
+        "name": {
+          "tr": "Beyaz Et / kg",
+          "en": "Chicken Mix / kg"
+        },
+        "description": {
+          "tr": "Masadaki ocakbaşında kendi kendinize pişirmeniz için hazırlanan kiloluk soslu tavuk çeşitleri.",
+          "en": "Assorted marinated chicken skewers and wings prepared by the kilogram for you to grill at your table."
+        },
+        "price": 2155,
+        "image": null,
+        "badge": {
+          "tr": "Kendi Etini Pişir",
+          "en": "Grill at Your Table"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Soslu tavuk şiş, kanat ve piliç biftek parçaları.",
+            "en": "Marinated chicken skewers, wings, and breast cutlets."
+          },
+          "allergens": {
+            "tr": "Yoğurt marinasyonu (süt ürünü).",
+            "en": "Dairy (yoghurt in marinade)."
+          },
+          "pairing": {
+            "tr": "Grup halinde soğuk içecekler.",
+            "en": "Chilled soft drinks for the table."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kirmizi-et-kg",
+        "name": {
+          "tr": "Kırmızı Et / kg",
+          "en": "Red Meat Mix / kg"
+        },
+        "description": {
+          "tr": "Masadaki özel ızgarada pişirmeniz için hazırlanan kiloluk kuzu ve dana etleri karışımı.",
+          "en": "Assorted lamb shish, meatballs, and cutlets prepared by the kilogram for self-grilling."
+        },
+        "price": 3100,
+        "image": null,
+        "badge": {
+          "tr": "Kendi Etini Pişir",
+          "en": "Grill at Your Table"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu şiş, köfte, antrikot ve çöp şiş etlerinin kiloluk sunumu.",
+            "en": "Assorted lamb skewers, meatballs, ribeye, and çöp şiş by the kg."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Şişe büyük boy Yeni Rakı.",
+            "en": "A large bottle of Yeni Rakı."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ozel-et-kg",
+        "name": {
+          "tr": "Özel Et / kg",
+          "en": "Chef's Cut Red Meat / kg"
+        },
+        "description": {
+          "tr": "En üst kalite küşleme, pirzola ve antrikot parçalarının kiloluk ocakbaşı sunumu.",
+          "en": "Premium selection of lamb tenderloin (küşleme), chops, and ribeye cuts prepared for self-grilling."
+        },
+        "price": 3465,
+        "image": null,
+        "badge": {
+          "tr": "Gurme Deneyim",
+          "en": "Gourmet Experience"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Kuzu pirzola kalemleri, küşleme sırt etleri ve dry-aged antrikot lokumları.",
+            "en": "Lamb chops, tenderloin, and dry-aged ribeye cuts."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Sarı Zeybek veya premium şişe şarap.",
+            "en": "Sarı Zeybek Rakı or premium red wine."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "garni-kisi-basi",
+        "name": {
+          "tr": "Garni (Kişi Başı)",
+          "en": "Sides & Garnishes (Per Person)"
+        },
+        "description": {
+          "tr": "Masada kendin pişir kendin ye deneyimine eşlik eden sınırsız köz sebze, lavaş ve mezeler.",
+          "en": "Unlimited grilled vegetables, warm flatbread, onions, and basic starters accompanying table grills."
+        },
+        "price": 100,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Köz biber, domates, taze soğan, sumaklı soğan, sıcak lavaş ekmekleri.",
+            "en": "Grilled peppers, tomatoes, fresh onions, flatbread."
+          },
+          "allergens": {
+            "tr": "Gluten (lavaş).",
+            "en": "Gluten (flatbread)."
+          },
+          "pairing": {
+            "tr": "Zorunlu masa servisi.",
+            "en": "Compulsory cover charge for table grill."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tas-firindan",
+    "name": {
+      "tr": "Taş Fırından",
+      "en": "From the Stone Oven"
+    },
+    "items": [
+      {
+        "id": "baspinar-lahmacun",
+        "name": {
+          "tr": "Başpınar Lahmacun",
+          "en": "Gaziantep Başpınar Lahmacun"
+        },
+        "description": {
+          "tr": "Gaziantep Başpınar usulü bol sarımsak ve zırh kıymalı incecik çıtır lahmacun.",
+          "en": "Traditional crispy flatbread topped with hand-minced meat, fresh garlic, and herbs (Antep style)."
+        },
+        "price": 500,
+        "image": null,
+        "badge": {
+          "tr": "Sarımsaklı Özel",
+          "en": "Special Garlic"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Un hamuru, zırh kıyması, taze sarımsak, domates, maydanoz, nar ekşisi sos.",
+            "en": "Thin dough, minced lamb/beef, garlic, tomatoes, parsley, pomegranate sauce."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Köpüklü soğuk yayık ayranı.",
+            "en": "Foaming cold ayran."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "lahmacun",
+        "name": {
+          "tr": "Lahmacun",
+          "en": "Classic Lahmacun"
+        },
+        "description": {
+          "tr": "Klasik odun ateşinde pişmiş incecik ve çıtır lahmacun.",
+          "en": "Crispy thin flatbread topped with a spiced minced meat, onion, and tomato mix."
+        },
+        "price": 350,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Buğday unu hamuru, soğanlı sarımsaklı dana/kuzu kıyma harcı, maydanoz.",
+            "en": "Wheat dough, minced beef/lamb, onions, tomatoes, parsley, spices."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Limon ve acılı şalgam.",
+            "en": "Squeezed lemon and spicy turnip juice."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "findik-lahmacun",
+        "name": {
+          "tr": "Fındık Lahmacun",
+          "en": "Fındık Lahmacun (Mini)"
+        },
+        "description": {
+          "tr": "Atıştırmalık veya başlangıç olarak ideal boyutta küçük çıtır lahmacun.",
+          "en": "Bite-sized miniature version of our classic crispy lahmacun."
+        },
+        "price": 165,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Mini un hamuru, lahmacun harcı.",
+            "en": "Mini wheat dough, spiced meat topping."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Başlangıç mezeleri.",
+            "en": "Nice with starters."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ceviz-lahmacun",
+        "name": {
+          "tr": "Ceviz Lahmacun",
+          "en": "Ceviz Lahmacun (with Walnut)"
+        },
+        "description": {
+          "tr": "Harcında ceviz içi barındıran zengin Antep tarzı çıtır lahmacun.",
+          "en": "Crispy thin flatbread topped with minced meat and crushed walnuts (traditional recipe)."
+        },
+        "price": 175,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Un hamuru, lahmacun harcı, çekilmiş ceviz içi.",
+            "en": "Wheat dough, spiced meat mix, ground walnuts."
+          },
+          "allergens": {
+            "tr": "Gluten, Ceviz.",
+            "en": "Gluten, Walnuts."
+          },
+          "pairing": {
+            "tr": "Tatlı kırmızı şaraplar.",
+            "en": "Sweet red wines."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "semsek-pide",
+        "name": {
+          "tr": "Semsek Pide",
+          "en": "Semsek Pide"
+        },
+        "description": {
+          "tr": "Güneydoğu mutfağına has, kapalı kıymalı fırın böreği tarzında pide.",
+          "en": "Folded closed crescent-shaped flatbread stuffed with spiced minced meat (regional style)."
+        },
+        "price": 700,
+        "image": null,
+        "badge": {
+          "tr": "Yerel Lezzet",
+          "en": "Local Taste"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Pide hamuru, baharatlı kıymalı iç harç.",
+            "en": "Dough, seasoned minced beef/lamb, onions, spices."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Soğuk şalgam suyu.",
+            "en": "Cold turnip juice."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kusbasili-pide",
+        "name": {
+          "tr": "Kuşbaşılı Pide",
+          "en": "Pide with Diced Meat"
+        },
+        "description": {
+          "tr": "Domatesli ve biberli dana kuşbaşı etleri ile taş fırında pişen pide.",
+          "en": "Boat-shaped flatbread baked with small tender cubes of beef, tomatoes, and green peppers."
+        },
+        "price": 860,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Pide hamuru, küçük doğranmış sığır eti, domates, sivri biber, tereyağı.",
+            "en": "Dough, diced beef tenderloin, tomatoes, bell peppers, butter."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü.",
+            "en": "Gluten, Dairy."
+          },
+          "pairing": {
+            "tr": "Soğuk asitli içecekler.",
+            "en": "Chilled soft drinks."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kasarli-pide",
+        "name": {
+          "tr": "Kaşarlı Pide",
+          "en": "Cheese Pide (Kaşarlı)"
+        },
+        "description": {
+          "tr": "Bol eriyen taze kaşar peyniri ve tereyağı ile çıtır pide.",
+          "en": "Boat-shaped flatbread filled with a generous amount of melted kashar cheese and butter."
+        },
+        "price": 700,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Pide hamuru, taze kaşar peyniri rendesi, tereyağı.",
+            "en": "Dough, shredded fresh kashar cheese, butter."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü.",
+            "en": "Gluten, Dairy."
+          },
+          "pairing": {
+            "tr": "Açık demli çay.",
+            "en": "Freshly brewed tea."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kiymali-pide",
+        "name": {
+          "tr": "Kıymalı Pide",
+          "en": "Minced Meat Pide (Kıymalı)"
+        },
+        "description": {
+          "tr": "Geleneksel soğanlı ve biberli dana kıyma harcının çıtır pideyle fırınlanması.",
+          "en": "Boat-shaped flatbread baked with a classic seasoned minced beef and onion filling."
+        },
+        "price": 770,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Pide hamuru, kıymalı harç (soğan, biber, domates).",
+            "en": "Dough, minced beef, onions, tomatoes, peppers, spices."
+          },
+          "allergens": {
+            "tr": "Gluten.",
+            "en": "Gluten."
+          },
+          "pairing": {
+            "tr": "Ev yapımı yayık ayranı.",
+            "en": "Foaming ayran."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "karisik-pide",
+        "name": {
+          "tr": "Karışık Pide",
+          "en": "Mixed Pide (Karışık)"
+        },
+        "description": {
+          "tr": "Kaşar peyniri, kuşbaşı et, kıyma ve sucuğun tek pidede buluştuğu zengin pide.",
+          "en": "Boat-shaped flatbread topped with kashar cheese, diced meat, minced meat, and Turkish sucuk."
+        },
+        "price": 990,
+        "image": null,
+        "badge": {
+          "tr": "Zengin",
+          "en": "Rich Mix"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Pide hamuru, dana kuşbaşı, kıyma, kaşar peyniri, sucuk dilimleri.",
+            "en": "Dough, beef cubes, minced beef, kashar, spicy sausage (sucuk)."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü.",
+            "en": "Gluten, Dairy."
+          },
+          "pairing": {
+            "tr": "Gazlı içecekler.",
+            "en": "Carbonated drinks."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "tatlilar",
+    "name": {
+      "tr": "Tatlılar",
+      "en": "Desserts"
+    },
+    "items": [
+      {
+        "id": "peynirli-kunefe",
+        "name": {
+          "tr": "Peynirli Künefe",
+          "en": "Peynirli Künefe"
+        },
+        "description": {
+          "tr": "Tel kadayıf arasında eriyen tuzsuz özel peyniri ve sıcak şerbet sunumu.",
+          "en": "Crisp shredded wheat pastry layered with melted unsalted cheese, baked hot and soaked in warm syrup."
+        },
+        "price": 400,
+        "image": null,
+        "badge": {
+          "tr": "Sıcak Servis",
+          "en": "Served Hot"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Tel kadayıf, sadeyağ, tuzsuz Hatay künefe peyniri, şerbet, Antep fıstığı.",
+            "en": "Shredded pastry (kadayıf), butter, unsalted künefe cheese, syrup, ground pistachios."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü, Fıstık.",
+            "en": "Gluten, Dairy, Pistachios."
+          },
+          "pairing": {
+            "tr": "Bir bardak soğuk su veya Türk kahvesi.",
+            "en": "A glass of cold water or Turkish coffee."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "480 kcal",
+            "protein": "9g",
+            "carbs": "65g",
+            "fat": "22g"
+          }
+        }
+      },
+      {
+        "id": "katmer",
+        "name": {
+          "tr": "Antep Katmeri",
+          "en": "Katmer (Flaky Pistachio Pastry)"
+        },
+        "description": {
+          "tr": "El açması incecik çıtır hamur içerisinde bol fıstık ve kaymak.",
+          "en": "Paper-thin hand-rolled pastry filled with clotted cream (kaymak), ground pistachios, and sugar."
+        },
+        "price": 600,
+        "image": "/images/dessert_katmer.webp",
+        "badge": {
+          "tr": "İmza Tatlı",
+          "en": "Signature Dessert"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Özel ince hamur, sadeyağ, boz Antep fıstığı, toz şeker, manda kaymağı.",
+            "en": "Paper-thin dough, pure butter, green Antep pistachios, clotted cream (kaymak)."
+          },
+          "allergens": {
+            "tr": "Gluten, Süt Ürünü, Antep Fıstığı.",
+            "en": "Gluten, Dairy, Pistachios."
+          },
+          "pairing": {
+            "tr": "Taze demlenmiş tavşan kanı çay.",
+            "en": "Freshly brewed Turkish tea."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "480 kcal",
+            "protein": "9g",
+            "carbs": "65g",
+            "fat": "22g"
+          }
+        }
+      },
+      {
+        "id": "ayva-tatlisi",
+        "name": {
+          "tr": "Ayva Tatlısı",
+          "en": "Baked Quince Dessert"
+        },
+        "description": {
+          "tr": "Kısık ateşte pişerek doğal rengini alan fırınlanmış ayva, kaymak eşliğinde.",
+          "en": "Oven-baked quince slow-cooked in sugar syrup until ruby red, topped with clotted cream and pistachios."
+        },
+        "price": 350,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Ekmek ayvası, şeker şerbeti, ayva çekirdekleri, manda kaymağı, Antep fıstığı süslemesi.",
+            "en": "Quince, sugar syrup, clotted cream, ground pistachios."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü (kaymak), Fıstık.",
+            "en": "Dairy, Pistachios."
+          },
+          "pairing": {
+            "tr": "Filtre kahve veya çay.",
+            "en": "Filter coffee or tea."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "380 kcal",
+            "protein": "6g",
+            "carbs": "55g",
+            "fat": "15g"
+          }
+        }
+      },
+      {
+        "id": "karisik-meyve",
+        "name": {
+          "tr": "Karışık Meyve Tabağı",
+          "en": "Fruit Platter"
+        },
+        "description": {
+          "tr": "Özenle seçilmiş mevsimlik taze meyvelerin şık buzlu sunumu.",
+          "en": "Elegant presentation of fresh sliced seasonal fruits served on ice."
+        },
+        "price": 400,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Mevsimine göre karpuz, kavun, incir, üzüm, çilek, portakal dilimleri.",
+            "en": "Seasonal selection of melon, watermelon, grapes, figs, or citrus."
+          },
+          "allergens": {
+            "tr": "Alerjen içermez.",
+            "en": "No allergens."
+          },
+          "pairing": {
+            "tr": "Et yemeği sonrası serinletici kapanış.",
+            "en": "Refreshing digestif after main course."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "380 kcal",
+            "protein": "6g",
+            "carbs": "55g",
+            "fat": "15g"
+          }
+        }
+      },
+      {
+        "id": "kabak-tatlisi",
+        "name": {
+          "tr": "Kabak Tatlısı",
+          "en": "Pumpkin Dessert"
+        },
+        "description": {
+          "tr": "Fırınlanmış bal kabağı dilimleri, bol tahin ve iri ceviz içi ile.",
+          "en": "Oven-baked sweet pumpkin slices served with double-roasted tahini and crushed walnuts."
+        },
+        "price": 350,
+        "image": null,
+        "badge": {
+          "tr": "Tahinli",
+          "en": "With Tahini"
+        },
+        "details": {
+          "ingredients": {
+            "tr": "Bal kabağı, şeker şerbeti, çifte kavrulmuş tahin, iri ceviz içi.",
+            "en": "Sweet pumpkin, sugar syrup, roasted tahini, walnuts."
+          },
+          "allergens": {
+            "tr": "Susam (tahin), Ceviz.",
+            "en": "Sesame, Walnuts."
+          },
+          "pairing": {
+            "tr": "Türk kahvesi.",
+            "en": "Turkish coffee."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "380 kcal",
+            "protein": "6g",
+            "carbs": "55g",
+            "fat": "15g"
+          }
+        }
+      },
+      {
+        "id": "firin-sutlac",
+        "name": {
+          "tr": "Fırın Sütlaç",
+          "en": "Baked Rice Pudding"
+        },
+        "description": {
+          "tr": "Taş fırında üzeri karamelize kabuk tutana dek pişirilen geleneksel sütlaç.",
+          "en": "Traditional creamy Turkish rice pudding oven-baked in clay pots until caramelized on top."
+        },
+        "price": 350,
+        "image": null,
+        "details": {
+          "ingredients": {
+            "tr": "Manda ve inek sütü karışımı, pirinç, şeker, vanilya, kırık fındık.",
+            "en": "Milk blend, rice, sugar, vanilla, crushed hazelnuts on top."
+          },
+          "allergens": {
+            "tr": "Süt Ürünü, Fındık.",
+            "en": "Dairy, Hazelnuts."
+          },
+          "pairing": {
+            "tr": "Demleme çay.",
+            "en": "Turkish tea."
+          },
+          "containsPork": false,
+          "nutrition": {
+            "calories": "380 kcal",
+            "protein": "6g",
+            "carbs": "55g",
+            "fat": "15g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "alkolsuz-icecekler",
+    "name": {
+      "tr": "Alkolsüz İçecekler",
+      "en": "Non-Alcoholic Drinks"
+    },
+    "items": [
+      {
+        "id": "coca-cola-330",
+        "name": {
+          "tr": "Coca Cola 330 ml",
+          "en": "Coca Cola 330 ml"
+        },
+        "description": {
+          "tr": "Kutu soğuk Coca-Cola (Original / Zero Sugar).",
+          "en": "Chilled canned Coca-Cola (Original or Zero Sugar)."
+        },
+        "price": 150,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "130 kcal",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sprite-330",
+        "name": {
+          "tr": "Sprite 330 ml",
+          "en": "Sprite 330 ml"
+        },
+        "description": {
+          "tr": "Limon aromalı kutu gazoz.",
+          "en": "Chilled canned lemon-lime soda."
+        },
+        "price": 150,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "130 kcal",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "fanta-330",
+        "name": {
+          "tr": "Fanta 330 ml",
+          "en": "Fanta 330 ml"
+        },
+        "description": {
+          "tr": "Portakal aromalı kutu gazoz.",
+          "en": "Chilled canned orange soda."
+        },
+        "price": 150,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "130 kcal",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ice-tea-330",
+        "name": {
+          "tr": "Ice Tea 330 ml",
+          "en": "Ice Tea 330 ml"
+        },
+        "description": {
+          "tr": "Şeftali veya limon aromalı soğuk çay.",
+          "en": "Iced tea in peach or lemon flavor."
+        },
+        "price": 150,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "130 kcal",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "meyve-suyu",
+        "name": {
+          "tr": "Meyve Suyu",
+          "en": "Fruit Juice"
+        },
+        "description": {
+          "tr": "Seçenekler: Şeftali, Kayısı, Vişne, Karışık.",
+          "en": "Peach, Apricot, Cherry, or Mixed fruit juices."
+        },
+        "price": 150,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "0 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ayran-bardak",
+        "name": {
+          "tr": "Ayran (bardak)",
+          "en": "Ayran (Glass)"
+        },
+        "description": {
+          "tr": "Geleneksel soğuk yayık ayranı.",
+          "en": "Diluted salted yoghurt drink, served cold."
+        },
+        "price": 135,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "80 kcal",
+            "protein": "4g",
+            "carbs": "6g",
+            "fat": "4g"
+          }
+        }
+      },
+      {
+        "id": "salgam-bardak",
+        "name": {
+          "tr": "Şalgam Suyu (bardak)",
+          "en": "Şalgam Suyu (Glass)"
+        },
+        "description": {
+          "tr": "Acılı veya acısız Adana usulü fermente mor havuç suyu.",
+          "en": "Spicy or mild traditional fermented red carrot & turnip juice from Adana."
+        },
+        "price": 135,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "0 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "soda-200",
+        "name": {
+          "tr": "Soda 200 ml",
+          "en": "Mineral Water 200 ml"
+        },
+        "description": {
+          "tr": "Sade doğal maden suyu.",
+          "en": "Chilled sparkling natural mineral water."
+        },
+        "price": 100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "0 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "su-1-5",
+        "name": {
+          "tr": "Su 1.5 Lt.",
+          "en": "Still Water 1.5 Lt."
+        },
+        "description": {
+          "tr": "Büyük boy cam şişe kaynak suyu.",
+          "en": "Large bottle of premium still spring water."
+        },
+        "price": 120,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "0 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "turk-kahvesi",
+        "name": {
+          "tr": "Türk Kahvesi",
+          "en": "Turkish Coffee"
+        },
+        "description": {
+          "tr": "Geleneksel közde pişmiş köpüklü Türk kahvesi.",
+          "en": "Authentic double-roasted Turkish coffee cooked slowly over embers."
+        },
+        "price": 120,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "130 kcal",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "cay-bardak",
+        "name": {
+          "tr": "Çay (bardak)",
+          "en": "Turkish Tea (Glass)"
+        },
+        "description": {
+          "tr": "Taze demlenmiş ince belli bardakta Türk çayı.",
+          "en": "Traditional freshly brewed black tea served in a tulip glass."
+        },
+        "price": 40,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "130 kcal",
+            "protein": "0g",
+            "carbs": "35g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "alkollu-icecekler",
+    "name": {
+      "tr": "Alkollü İçecekler",
+      "en": "Alcoholic Drinks"
+    },
+    "items": [
+      {
+        "id": "chivas-70",
+        "name": {
+          "tr": "Chivas Regal 12 Years 70cl",
+          "en": "Chivas Regal 12 Years 70cl"
+        },
+        "description": {
+          "tr": "12 yıllık premium İskoç viskisi şişesi.",
+          "en": "Premium 12-year-old blended Scotch whisky bottle."
+        },
+        "price": 6500,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "chivas-35",
+        "name": {
+          "tr": "Chivas Regal 12 Years 35cl",
+          "en": "Chivas Regal 12 Years 35cl"
+        },
+        "description": {
+          "tr": "12 yıllık premium İskoç viskisi yarım şişe.",
+          "en": "Premium 12-year-old blended Scotch whisky half-bottle."
+        },
+        "price": 3300,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "chivas-duble",
+        "name": {
+          "tr": "Chivas Regal 12 Years Duble",
+          "en": "Chivas Regal 12 Years (Double)"
+        },
+        "description": {
+          "tr": "Duble kadeh viski servisi.",
+          "en": "Double shot of 12-year Scotch served on the rocks or neat."
+        },
+        "price": 650,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "jw-black-70",
+        "name": {
+          "tr": "JW Black Label 70cl",
+          "en": "JW Black Label 70cl"
+        },
+        "description": {
+          "tr": "Johnnie Walker Black Label İskoç viskisi şişesi.",
+          "en": "Johnnie Walker Black Label blended Scotch whisky bottle."
+        },
+        "price": 6500,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "jw-black-35",
+        "name": {
+          "tr": "JW Black Label 35cl",
+          "en": "JW Black Label 35cl"
+        },
+        "description": {
+          "tr": "Johnnie Walker Black Label yarım şişe.",
+          "en": "Johnnie Walker Black Label half-bottle."
+        },
+        "price": 3300,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "jw-black-duble",
+        "name": {
+          "tr": "JW Black Label Duble",
+          "en": "JW Black Label (Double)"
+        },
+        "description": {
+          "tr": "Duble kadeh Johnnie Walker Black Label.",
+          "en": "Double shot of JW Black Label."
+        },
+        "price": 650,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "absolut-70",
+        "name": {
+          "tr": "Absolut Votka 70cl",
+          "en": "Absolut Vodka 70cl"
+        },
+        "description": {
+          "tr": "İsveç votkası şişesi.",
+          "en": "Classic Swedish vodka bottle."
+        },
+        "price": 4550,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "absolut-35",
+        "name": {
+          "tr": "Absolut Votka 35cl",
+          "en": "Absolut Vodka 35cl"
+        },
+        "description": {
+          "tr": "İsveç votkası yarım şişe.",
+          "en": "Classic Swedish vodka half-bottle."
+        },
+        "price": 2280,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "absolut-duble",
+        "name": {
+          "tr": "Absolut Votka Duble",
+          "en": "Absolut Vodka (Double)"
+        },
+        "description": {
+          "tr": "Duble kadeh Absolut votka.",
+          "en": "Double shot of Absolut vodka."
+        },
+        "price": 530,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "smirnoff-70",
+        "name": {
+          "tr": "Smirnoff Votka 70cl",
+          "en": "Smirnoff Vodka 70cl"
+        },
+        "description": {
+          "tr": "Klasik Smirnoff votka şişesi.",
+          "en": "Classic triple-distilled vodka bottle."
+        },
+        "price": 4550,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "smirnoff-35",
+        "name": {
+          "tr": "Smirnoff Votka 35cl",
+          "en": "Smirnoff Vodka 35cl"
+        },
+        "description": {
+          "tr": "Yarım şişe Smirnoff votka.",
+          "en": "Classic triple-distilled vodka half-bottle."
+        },
+        "price": 2280,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "smirnoff-duble",
+        "name": {
+          "tr": "Smirnoff Votka Duble",
+          "en": "Smirnoff Vodka (Double)"
+        },
+        "description": {
+          "tr": "Duble kadeh Smirnoff votka.",
+          "en": "Double shot of Smirnoff vodka."
+        },
+        "price": 530,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "efes-pilsen-50",
+        "name": {
+          "tr": "Efes Pilsen 50 cl",
+          "en": "Efes Pilsen 50 cl"
+        },
+        "description": {
+          "tr": "Klasik Türk birası şişesi.",
+          "en": "Classic Turkish lager beer bottle."
+        },
+        "price": 400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "bomonti-50",
+        "name": {
+          "tr": "Bomonti Filtresiz 50 cl",
+          "en": "Bomonti Filtresiz 50 cl"
+        },
+        "description": {
+          "tr": "Yumuşak içimli filtresiz arpa birası şişesi.",
+          "en": "Unfiltered Turkish blonde lager beer bottle."
+        },
+        "price": 400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "miller-33",
+        "name": {
+          "tr": "Miller Genuine Draft 33 cl",
+          "en": "Miller Genuine Draft 33 cl"
+        },
+        "description": {
+          "tr": "Hafif gövdeli ithal bira şişesi.",
+          "en": "Crisp American lager beer bottle."
+        },
+        "price": 320,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "100 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "rakilar",
+    "name": {
+      "tr": "Rakılar",
+      "en": "Rakıs"
+    },
+    "items": [
+      {
+        "id": "yeni-raki-100",
+        "name": {
+          "tr": "Yeni Rakı 100 cl",
+          "en": "Yeni Rakı 100 cl"
+        },
+        "description": {
+          "tr": "Geleneksel Yeni Rakı şişesi.",
+          "en": "Standard anisette spirit Yeni Rakı bottle."
+        },
+        "price": 4090,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-raki-70",
+        "name": {
+          "tr": "Yeni Rakı 70 cl",
+          "en": "Yeni Rakı 70 cl"
+        },
+        "description": {
+          "tr": "Klasik 70'lik Yeni Rakı şişesi.",
+          "en": "70 cl Yeni Rakı bottle."
+        },
+        "price": 2920,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-raki-50",
+        "name": {
+          "tr": "Yeni Rakı 50 cl",
+          "en": "Yeni Rakı 50 cl"
+        },
+        "description": {
+          "tr": "50'lik Yeni Rakı şişesi.",
+          "en": "50 cl Yeni Rakı bottle."
+        },
+        "price": 2250,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-raki-35",
+        "name": {
+          "tr": "Yeni Rakı 35 cl",
+          "en": "Yeni Rakı 35 cl"
+        },
+        "description": {
+          "tr": "35'lik Yeni Rakı şişesi.",
+          "en": "35 cl Yeni Rakı bottle."
+        },
+        "price": 1670,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-raki-20",
+        "name": {
+          "tr": "Yeni Rakı 20 cl",
+          "en": "Yeni Rakı 20 cl"
+        },
+        "description": {
+          "tr": "20'lik Yeni Rakı şişesi.",
+          "en": "20 cl Yeni Rakı bottle."
+        },
+        "price": 1020,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-raki-duble",
+        "name": {
+          "tr": "Yeni Rakı Duble",
+          "en": "Yeni Rakı (Double)"
+        },
+        "description": {
+          "tr": "Kadehte çift ölçü rakı.",
+          "en": "Double shot of Yeni Rakı served with water and ice."
+        },
+        "price": 420,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "145 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-raki-tek",
+        "name": {
+          "tr": "Yeni Rakı Tek",
+          "en": "Yeni Rakı (Single)"
+        },
+        "description": {
+          "tr": "Kadehte tek ölçü rakı.",
+          "en": "Single shot of Yeni Rakı."
+        },
+        "price": 275,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-100",
+        "name": {
+          "tr": "Yeni Seri 100 cl",
+          "en": "Yeni Seri 100 cl"
+        },
+        "description": {
+          "tr": "%100 yaş üzüm anasonundan Yeni Seri şişesi.",
+          "en": "Made from 100% fresh grapes, Yeni Seri bottle."
+        },
+        "price": 4280,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-70",
+        "name": {
+          "tr": "Yeni Seri 70 cl",
+          "en": "Yeni Seri 70 cl"
+        },
+        "description": {
+          "tr": "70'lik Yeni Seri şişesi.",
+          "en": "70 cl Yeni Seri bottle."
+        },
+        "price": 3100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-50",
+        "name": {
+          "tr": "Yeni Seri 50 cl",
+          "en": "Yeni Seri 50 cl"
+        },
+        "description": {
+          "tr": "50'lik Yeni Seri şişesi.",
+          "en": "50 cl Yeni Seri bottle."
+        },
+        "price": 2440,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-35",
+        "name": {
+          "tr": "Yeni Seri 35 cl",
+          "en": "Yeni Seri 35 cl"
+        },
+        "description": {
+          "tr": "35'lik Yeni Seri şişesi.",
+          "en": "35 cl Yeni Seri bottle."
+        },
+        "price": 1840,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-20",
+        "name": {
+          "tr": "Yeni Seri 20 cl",
+          "en": "Yeni Seri 20 cl"
+        },
+        "description": {
+          "tr": "20'lik Yeni Seri şişesi.",
+          "en": "20 cl Yeni Seri bottle."
+        },
+        "price": 1100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-duble",
+        "name": {
+          "tr": "Yeni Seri Duble",
+          "en": "Yeni Seri (Double)"
+        },
+        "description": {
+          "tr": "Kadehte çift ölçü Yeni Seri.",
+          "en": "Double shot of fresh grape Yeni Seri."
+        },
+        "price": 460,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "145 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yeni-seri-tek",
+        "name": {
+          "tr": "Yeni Seri Tek",
+          "en": "Yeni Seri (Single)"
+        },
+        "description": {
+          "tr": "Kadehte tek ölçü Yeni Seri.",
+          "en": "Single shot of fresh grape Yeni Seri."
+        },
+        "price": 300,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-100",
+        "name": {
+          "tr": "Beylerbeyi Göbek 100 cl",
+          "en": "Beylerbeyi Göbek 100 cl"
+        },
+        "description": {
+          "tr": "3 kez distile edilmiş en üst kalite Beylerbeyi Göbek şişesi.",
+          "en": "Triple-distilled premium anisette spirit Beylerbeyi Göbek bottle."
+        },
+        "price": 5250,
+        "image": null,
+        "badge": {
+          "tr": "Lüks",
+          "en": "Premium"
+        },
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-70",
+        "name": {
+          "tr": "Beylerbeyi Göbek 70 cl",
+          "en": "Beylerbeyi Göbek 70 cl"
+        },
+        "description": {
+          "tr": "70'lik Beylerbeyi Göbek şişesi.",
+          "en": "70 cl Beylerbeyi Göbek bottle."
+        },
+        "price": 4150,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-50",
+        "name": {
+          "tr": "Beylerbeyi Göbek 50 cl",
+          "en": "Beylerbeyi Göbek 50 cl"
+        },
+        "description": {
+          "tr": "50'lik Beylerbeyi Göbek şişesi.",
+          "en": "50 cl Beylerbeyi Göbek bottle."
+        },
+        "price": 3200,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-35",
+        "name": {
+          "tr": "Beylerbeyi Göbek 35 cl",
+          "en": "Beylerbeyi Göbek 35 cl"
+        },
+        "description": {
+          "tr": "35'lik Beylerbeyi Göbek şişesi.",
+          "en": "35 cl Beylerbeyi Göbek bottle."
+        },
+        "price": 2300,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-20",
+        "name": {
+          "tr": "Beylerbeyi Göbek 20 cl",
+          "en": "Beylerbeyi Göbek 20 cl"
+        },
+        "description": {
+          "tr": "20'lik Beylerbeyi Göbek şişesi.",
+          "en": "20 cl Beylerbeyi Göbek bottle."
+        },
+        "price": 1450,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-duble",
+        "name": {
+          "tr": "Beylerbeyi Göbek Duble",
+          "en": "Beylerbeyi Göbek (Double)"
+        },
+        "description": {
+          "tr": "Kadehte duble Beylerbeyi Göbek.",
+          "en": "Double shot of premium Beylerbeyi Göbek."
+        },
+        "price": 580,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "145 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "beylerbeyi-gobek-tek",
+        "name": {
+          "tr": "Beylerbeyi Göbek Tek",
+          "en": "Beylerbeyi Göbek (Single)"
+        },
+        "description": {
+          "tr": "Kadehte tek Beylerbeyi Göbek.",
+          "en": "Single shot of premium Beylerbeyi Göbek."
+        },
+        "price": 375,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-100",
+        "name": {
+          "tr": "Tekirdağ Altın Seri 100 cl",
+          "en": "Tekirdağ Altın Seri 100 cl"
+        },
+        "description": {
+          "tr": "Meşe fıçılarda demlenmiş altın sarısı Tekirdağ Altın Seri şişesi.",
+          "en": "Oaked golden spirit Tekirdağ Altın Seri bottle."
+        },
+        "price": 4450,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-70",
+        "name": {
+          "tr": "Tekirdağ Altın Seri 70 cl",
+          "en": "Tekirdağ Altın Seri 70 cl"
+        },
+        "description": {
+          "tr": "70'lik Tekirdağ Altın Seri şişesi.",
+          "en": "70 cl Tekirdağ Altın Seri bottle."
+        },
+        "price": 3400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-50",
+        "name": {
+          "tr": "Tekirdağ Altın Seri 50 cl",
+          "en": "Tekirdağ Altın Seri 50 cl"
+        },
+        "description": {
+          "tr": "50'lik Tekirdağ Altın Seri şişesi.",
+          "en": "50 cl Tekirdağ Altın Seri bottle."
+        },
+        "price": 2600,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-35",
+        "name": {
+          "tr": "Tekirdağ Altın Seri 35 cl",
+          "en": "Tekirdağ Altın Seri 35 cl"
+        },
+        "description": {
+          "tr": "35'lik Tekirdağ Altın Seri şişesi.",
+          "en": "35 cl Tekirdağ Altın Seri bottle."
+        },
+        "price": 1900,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-20",
+        "name": {
+          "tr": "Tekirdağ Altın Seri 20 cl",
+          "en": "Tekirdağ Altın Seri 20 cl"
+        },
+        "description": {
+          "tr": "20'lik Tekirdağ Altın Seri şişesi.",
+          "en": "20 cl Tekirdağ Altın Seri bottle."
+        },
+        "price": 1320,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-duble",
+        "name": {
+          "tr": "Tekirdağ Altın Seri Duble",
+          "en": "Tekirdağ Altın Seri (Double)"
+        },
+        "description": {
+          "tr": "Kadehte duble Tekirdağ Altın Seri.",
+          "en": "Double shot of oaked Tekirdağ Altın."
+        },
+        "price": 530,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "145 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "tekirdag-altin-tek",
+        "name": {
+          "tr": "Tekirdağ Altın Seri Tek",
+          "en": "Tekirdağ Altın Seri (Single)"
+        },
+        "description": {
+          "tr": "Kadehte tek Tekirdağ Altın Seri.",
+          "en": "Single shot of oaked Tekirdağ Altın."
+        },
+        "price": 345,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-100",
+        "name": {
+          "tr": "Sarı Zeybek 100 cl",
+          "en": "Sarı Zeybek 100 cl"
+        },
+        "description": {
+          "tr": "Yaş üzüm anasonunun meşe fıçılarda bekletilmesiyle üretilen lüks Sarı Zeybek şişesi.",
+          "en": "Double-distilled fresh grape spirit aged in oak casks, Sarı Zeybek bottle."
+        },
+        "price": 5400,
+        "image": null,
+        "badge": {
+          "tr": "Efsane",
+          "en": "Legendary"
+        },
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-70",
+        "name": {
+          "tr": "Sarı Zeybek 70 cl",
+          "en": "Sarı Zeybek 70 cl"
+        },
+        "description": {
+          "tr": "70'lik Sarı Zeybek şişesi.",
+          "en": "70 cl Sarı Zeybek bottle."
+        },
+        "price": 4260,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-50",
+        "name": {
+          "tr": "Sarı Zeybek 50 cl",
+          "en": "Sarı Zeybek 50 cl"
+        },
+        "description": {
+          "tr": "50'lik Sarı Zeybek şişesi.",
+          "en": "50 cl Sarı Zeybek bottle."
+        },
+        "price": 3250,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-35",
+        "name": {
+          "tr": "Sarı Zeybek 35 cl",
+          "en": "Sarı Zeybek 35 cl"
+        },
+        "description": {
+          "tr": "35'lik Sarı Zeybek şişesi.",
+          "en": "35 cl Sarı Zeybek bottle."
+        },
+        "price": 2350,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-20",
+        "name": {
+          "tr": "Sarı Zeybek 20 cl",
+          "en": "Sarı Zeybek 20 cl"
+        },
+        "description": {
+          "tr": "20'lik Sarı Zeybek şişesi.",
+          "en": "20 cl Sarı Zeybek bottle."
+        },
+        "price": 1480,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "280 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-duble",
+        "name": {
+          "tr": "Sarı Zeybek Duble",
+          "en": "Sarı Zeybek (Double)"
+        },
+        "description": {
+          "tr": "Kadehte duble Sarı Zeybek.",
+          "en": "Double shot of oaked Sarı Zeybek."
+        },
+        "price": 600,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "145 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sari-zeybek-tek",
+        "name": {
+          "tr": "Sarı Zeybek Tek",
+          "en": "Sarı Zeybek (Single)"
+        },
+        "description": {
+          "tr": "Kadehte tek Sarı Zeybek.",
+          "en": "Single shot of oaked Sarı Zeybek."
+        },
+        "price": 400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "75 kcal",
+            "protein": "0g",
+            "carbs": "0g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "saraplar",
+    "name": {
+      "tr": "Şaraplar",
+      "en": "Wines"
+    },
+    "items": [
+      {
+        "id": "ancyra-narince-75",
+        "name": {
+          "tr": "ANCYRA Narince 75 cl",
+          "en": "ANCYRA Narince 75 cl"
+        },
+        "description": {
+          "tr": "Hafif asitli, taze meyve aromalı sek beyaz şarap şişesi.",
+          "en": "Fresh, dry white wine with stone fruit notes, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ancyra-blush-75",
+        "name": {
+          "tr": "ANCYRA Blush 75 cl",
+          "en": "ANCYRA Blush 75 cl"
+        },
+        "description": {
+          "tr": "Meyvemsi pembe (roze) sek şarap şişesi.",
+          "en": "Crisp and dry rosé wine with forest berry notes, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ancyra-merlot-75",
+        "name": {
+          "tr": "ANCYRA Merlot 75 cl",
+          "en": "ANCYRA Merlot 75 cl"
+        },
+        "description": {
+          "tr": "Yumuşak içimli, kırmızı meyve aromalı sek kırmızı şarap şişesi.",
+          "en": "Soft, rounded dry red wine with plum and cherry notes, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ancyra-okuzgozu-75",
+        "name": {
+          "tr": "ANCYRA Öküzgözü 75 cl",
+          "en": "ANCYRA Öküzgözü 75 cl"
+        },
+        "description": {
+          "tr": "Zarif tanenli, kırmızı meyve aromalı kırmızı şarap şişesi.",
+          "en": "Bright and lively dry red wine with light oak notes, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "ancyra-kalecik-75",
+        "name": {
+          "tr": "ANCYRA Kalecik Karası 75 cl",
+          "en": "ANCYRA Kalecik Karası 75 cl"
+        },
+        "description": {
+          "tr": "Kadifemsi, hafif içimli sek kırmızı şarap şişesi.",
+          "en": "Light-to-medium bodied dry red wine with strawberry notes, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "sultaniye-emir-75",
+        "name": {
+          "tr": "Sultaniye Emir 75 cl",
+          "en": "Sultaniye Emir 75 cl"
+        },
+        "description": {
+          "tr": "Ferahlatıcı, diri asitli sek beyaz şarap şişesi.",
+          "en": "Crisp and lively dry white wine blend, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "bogazkere-75",
+        "name": {
+          "tr": "Boğazkere 75 cl",
+          "en": "Boğazkere 75 cl"
+        },
+        "description": {
+          "tr": "Güçlü gövdeli, tanenli ve baharatlı sek kırmızı şarap şişesi.",
+          "en": "Bold, tannic, and heavily spiced dry red wine, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "cabernet-syrah-75",
+        "name": {
+          "tr": "Cabernet Sauvignon - Syrah 75 cl",
+          "en": "Cabernet Sauvignon - Syrah 75 cl"
+        },
+        "description": {
+          "tr": "Gür gövdeli Cabernet ve Syrah kupajı kırmızı şarap şişesi.",
+          "en": "Full-bodied rich dry red blend, 75 cl."
+        },
+        "price": 2400,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "yakut-75",
+        "name": {
+          "tr": "Yakut 75 cl",
+          "en": "Yakut 75 cl"
+        },
+        "description": {
+          "tr": "Klasik, lezzetli sek kırmızı sofra şarabı şişesi.",
+          "en": "Traditional medium-bodied dry red wine, 75 cl."
+        },
+        "price": 2100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "cankaya-75",
+        "name": {
+          "tr": "Çankaya 75 cl",
+          "en": "Çankaya 75 cl"
+        },
+        "description": {
+          "tr": "Klasik ve zarif sek beyaz sofra şarabı şişesi.",
+          "en": "Traditional refreshing dry white wine, 75 cl."
+        },
+        "price": 2100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "angora-75",
+        "name": {
+          "tr": "Angora 75 cl",
+          "en": "Angora 75 cl"
+        },
+        "description": {
+          "tr": "Ferahlatıcı, kolay içimli kırmızı veya beyaz şarap şişesi.",
+          "en": "Light-bodied easy-drinking red or white wine, 75 cl."
+        },
+        "price": 1600,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "lal-75",
+        "name": {
+          "tr": "Lal 75 cl",
+          "en": "Lal 75 cl"
+        },
+        "description": {
+          "tr": "Meyvemsi, canlı pembe roze şarap şişesi.",
+          "en": "Fresh berry-accented dry rosé wine, 75 cl."
+        },
+        "price": 2100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "selection-narince-75",
+        "name": {
+          "tr": "Selection Narince - Emir 75 cl",
+          "en": "Selection Narince - Emir 75 cl"
+        },
+        "description": {
+          "tr": "Fıçı esintili zengin gövdeli beyaz şarap şişesi.",
+          "en": "Oaked, complex, and high-acid dry white wine, 75 cl."
+        },
+        "price": 3100,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "selection-okuzgozu-75",
+        "name": {
+          "tr": "Selection Öküzgözü - Boğazkere 75 cl",
+          "en": "Selection Öküzgözü - Boğazkere 75 cl"
+        },
+        "description": {
+          "tr": "Seçkin üzümlerden kupaj, zengin kırmızı şarap şişesi.",
+          "en": "Premium selected full-bodied dry red blend, 75 cl."
+        },
+        "price": 3100,
+        "image": null,
+        "badge": {
+          "tr": "Lüks Seçim",
+          "en": "Lux Choice"
+        },
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kavaklidere-emir-75",
+        "name": {
+          "tr": "Kavaklıdere Emir 75 cl",
+          "en": "Kavaklıdere Emir 75 cl"
+        },
+        "description": {
+          "tr": "Kapadokya yöresi Emir üzümlerinden üretilmiş sek beyaz şarap şişesi.",
+          "en": "Special mineral-rich dry white wine from Cappadocia, 75 cl."
+        },
+        "price": 2750,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kavaklidere-misket-75",
+        "name": {
+          "tr": "Kavaklıdere Misket 75 cl",
+          "en": "Kavaklıdere Misket 75 cl"
+        },
+        "description": {
+          "tr": "Çiçeksi ve meyvemsi aromalı beyaz şarap şişesi.",
+          "en": "Highly aromatic floral and fruity dry white wine, 75 cl."
+        },
+        "price": 2750,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kadeh-sarap-kirmizi",
+        "name": {
+          "tr": "Kadeh Şarap Kırmızı",
+          "en": "House Red Wine (Glass)"
+        },
+        "description": {
+          "tr": "Kadehte servis edilen şefin seçimi kırmızı şarap.",
+          "en": "Glass of house selected dry red wine."
+        },
+        "price": 550,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "125 kcal",
+            "protein": "0g",
+            "carbs": "2g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "kadeh-sarap-beyaz",
+        "name": {
+          "tr": "Kadeh Şarap Beyaz",
+          "en": "House White Wine (Glass)"
+        },
+        "description": {
+          "tr": "Kadehte servis edilen şefin seçimi beyaz şarap.",
+          "en": "Glass of house selected dry white wine."
+        },
+        "price": 550,
+        "image": null,
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "125 kcal",
+            "protein": "0g",
+            "carbs": "2g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "inci-damlasi-75",
+        "name": {
+          "tr": "İnci Damlası 75 cl",
+          "en": "İnci Damlası 75 cl"
+        },
+        "description": {
+          "tr": "Doğal köpüren, ferahlatıcı lüks beyaz şarap şişesi.",
+          "en": "Naturally sparkling dry white wine, 75 cl."
+        },
+        "price": 4000,
+        "image": null,
+        "badge": {
+          "tr": "Köpüklü",
+          "en": "Sparkling"
+        },
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      },
+      {
+        "id": "pembe-kopuk-75",
+        "name": {
+          "tr": "Pembe Köpük 75 cl",
+          "en": "Pembe Köpük 75 cl"
+        },
+        "description": {
+          "tr": "Doğal köpüren, meyvemsi lüks pembe şarap şişesi.",
+          "en": "Naturally sparkling dry rosé wine, 75 cl."
+        },
+        "price": 4000,
+        "image": null,
+        "badge": {
+          "tr": "Köpüklü",
+          "en": "Sparkling"
+        },
+        "details": {
+          "containsPork": false,
+          "nutrition": {
+            "calories": "580 kcal",
+            "protein": "0g",
+            "carbs": "10g",
+            "fat": "0g"
+          }
+        }
+      }
+    ]
+  }
+]
