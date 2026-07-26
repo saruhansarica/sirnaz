@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   let menuData = [];
+  let settingsData = {
+    taxNoticeTr: "Fiyatlarımıza tüm vergiler dahildir.",
+    taxNoticeEn: "All taxes are included in our prices.",
+    priceUpdateDate: "21.07.2026"
+  };
   let currentLang = localStorage.getItem('sirnaz_lang') || 'tr';
   
   // DOM Elements
@@ -123,6 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modal-lbl-prot').textContent = translation.nutritionProt;
     document.getElementById('modal-lbl-carbs').textContent = translation.nutritionCarbs;
     document.getElementById('modal-lbl-fat').textContent = translation.nutritionFat;
+    
+    // Update footer pricing/tax notice settings
+    renderFooterSettings();
+  };
+
+  const renderFooterSettings = () => {
+    const taxNoticeEl = document.getElementById('footer-tax-notice');
+    const priceUpdateEl = document.getElementById('footer-price-update');
+    
+    if (taxNoticeEl && priceUpdateEl) {
+      taxNoticeEl.textContent = currentLang === 'tr' ? settingsData.taxNoticeTr : settingsData.taxNoticeEn;
+      priceUpdateEl.textContent = currentLang === 'tr' 
+        ? `Fiyat Değişim Tarihi: ${settingsData.priceUpdateDate}` 
+        : `Price Revision Date: ${settingsData.priceUpdateDate}`;
+    }
   };
 
   // Toggle Language Handler
@@ -146,6 +166,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadMenu = async () => {
     try {
       updateLanguageUI(); // Set initial static UI translation
+      
+      // Fetch settings first
+      try {
+        const settingsResponse = await fetch('/api/settings');
+        if (settingsResponse.ok) {
+          settingsData = await settingsResponse.json();
+          renderFooterSettings();
+        }
+      } catch (settingsErr) {
+        console.error('Error loading settings:', settingsErr);
+      }
       
       const response = await fetch('/api/menu');
       if (!response.ok) throw new Error('Menu could not be loaded.');

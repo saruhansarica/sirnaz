@@ -142,6 +142,47 @@ app.post('/api/menu', (req, res) => {
   });
 });
 
+// API endpoint to retrieve the settings
+app.get('/api/settings', (req, res) => {
+  const settingsPath = path.join(__dirname, 'data', 'settings.json');
+  fs.readFile(settingsPath, 'utf8', (err, data) => {
+    if (err) {
+      // If it doesn't exist, return default values
+      return res.json({
+        taxNoticeTr: "Fiyatlarımıza tüm vergiler dahildir.",
+        taxNoticeEn: "All taxes are included in our prices.",
+        priceUpdateDate: "21.07.2026"
+      });
+    }
+    try {
+      res.json(JSON.parse(data));
+    } catch (parseErr) {
+      res.status(500).json({ error: 'Invalid settings file.' });
+    }
+  });
+});
+
+// API endpoint to save settings (protected with cookie check)
+app.post('/api/settings', (req, res) => {
+  const session = getAdminCookie(req);
+  const expectedSession = Buffer.from('sirnaz:4S*rdx89.').toString('base64');
+
+  if (session !== expectedSession) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  const settingsPath = path.join(__dirname, 'data', 'settings.json');
+  const newSettings = req.body;
+
+  fs.writeFile(settingsPath, JSON.stringify(newSettings, null, 2), 'utf8', (err) => {
+    if (err) {
+      console.error('Error writing settings:', err);
+      return res.status(500).json({ error: 'Failed to save settings.' });
+    }
+    res.json({ success: true });
+  });
+});
+
 // Fallback to serve index.html for single page application behavior
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
